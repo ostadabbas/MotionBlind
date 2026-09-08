@@ -210,9 +210,11 @@ Video-MME is 4-way multiple choice with no pairing; only `Acc` is defined there.
 ## Citation and License
 
 ```bibtex
-@inproceedings{anonymous2026motionblind,
+@inproceedings{bhatia2026motionblind,
   title     = {MotionBlind: Probing the Illusion of Motion Understanding in Video-LLMs},
-  author    = {Anonymous},
+  author    = {Bhatia, Dhairya and Galoaa, Bishoy and Fritsche, Oliver and Kamal, Shahid and
+               Abdul Salam, Muhammad Obaidullah and Saleem, Umer and Rastogi, Om and
+               Chettiar, Frania Felix and Erdo{\u{g}}mu{\c{s}}, Nesli and Ostadabbas, Sarah},
   booktitle = {NeurIPS 2026 Workshop on World Models in Physical AI},
   year      = {2026},
   note      = {Under review}
