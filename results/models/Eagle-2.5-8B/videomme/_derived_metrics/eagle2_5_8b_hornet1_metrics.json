@@ -1,0 +1,115 @@
+{
+  "Acc": 0.4862962962962963,
+  "Acc_pct": 48.629629629629626,
+  "Acc_ci95": [
+    46.74761303244836,
+    50.51554025286242
+  ],
+  "n": 2700,
+  "correct": 1313,
+  "invalid": 0,
+  "chance_pct": 25.0,
+  "majority_baseline_pct": 27.22222222222222,
+  "majority_letter": "B",
+  "gt_distribution": {
+    "A": 677,
+    "B": 735,
+    "C": 684,
+    "D": 604
+  },
+  "choice_distribution": {
+    "A": 589,
+    "B": 860,
+    "C": 674,
+    "D": 577
+  },
+  "by_duration": {
+    "long": {
+      "Acc_pct": 48.0,
+      "correct": 432,
+      "n": 900
+    },
+    "medium": {
+      "Acc_pct": 46.77777777777778,
+      "correct": 421,
+      "n": 900
+    },
+    "short": {
+      "Acc_pct": 51.111111111111114,
+      "correct": 460,
+      "n": 900
+    }
+  },
+  "by_task_type": {
+    "Action Reasoning": {
+      "Acc_pct": 51.92982456140351,
+      "correct": 148,
+      "n": 285
+    },
+    "Action Recognition": {
+      "Acc_pct": 47.92332268370607,
+      "correct": 150,
+      "n": 313
+    },
+    "Attribute Perception": {
+      "Acc_pct": 50.450450450450454,
+      "correct": 112,
+      "n": 222
+    },
+    "Counting Problem": {
+      "Acc_pct": 35.44776119402985,
+      "correct": 95,
+      "n": 268
+    },
+    "Information Synopsis": {
+      "Acc_pct": 59.752321981424146,
+      "correct": 193,
+      "n": 323
+    },
+    "OCR Problems": {
+      "Acc_pct": 39.568345323741006,
+      "correct": 55,
+      "n": 139
+    },
+    "Object Reasoning": {
+      "Acc_pct": 51.541850220264315,
+      "correct": 234,
+      "n": 454
+    },
+    "Object Recognition": {
+      "Acc_pct": 44.35028248587571,
+      "correct": 157,
+      "n": 354
+    },
+    "Spatial Perception": {
+      "Acc_pct": 51.851851851851855,
+      "correct": 28,
+      "n": 54
+    },
+    "Spatial Reasoning": {
+      "Acc_pct": 62.5,
+      "correct": 35,
+      "n": 56
+    },
+    "Temporal Perception": {
+      "Acc_pct": 52.72727272727273,
+      "correct": 29,
+      "n": 55
+    },
+    "Temporal Reasoning": {
+      "Acc_pct": 43.50282485875706,
+      "correct": 77,
+      "n": 177
+    }
+  },
+  "config": {
+    "model_name": "Eagle-2.5-8B",
+    "sampling": "hornet",
+    "num_frames": 1,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "results/eagle2_5_8b_videomme_default_*.json",
+    "dataset": "videomme"
+  },
+  "_derived": true
+}

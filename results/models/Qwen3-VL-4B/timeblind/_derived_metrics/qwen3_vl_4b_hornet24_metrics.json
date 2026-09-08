@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.31166666666666665,
+  "V_Acc": 0.44,
+  "Acc": 0.6370833333333333,
+  "I_Acc": 0.2,
+  "F1_yesno_pct": 51.09,
+  "yesno_Acc_pct": 60.92,
+  "yes_rate_pct": 29.92,
+  "confusion": {
+    "TP": 245,
+    "FP": 114,
+    "FN": 355,
+    "TN": 486,
+    "invalid": 0,
+    "n_yesno": 1200
+  },
+  "config": {
+    "model_name": "Qwen3-VL-4B",
+    "sampling": "hornet",
+    "num_frames": 24,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "results/qwen3_vl_4b_timeblind_*.json",
+    "dataset": "timeblind"
+  },
+  "_derived": true
+}

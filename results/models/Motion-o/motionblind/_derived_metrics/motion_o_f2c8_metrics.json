@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.041666666666666664,
+  "V_Acc": 0.05,
+  "Acc": 0.5083333333333333,
+  "I_Acc": 0.0,
+  "F1_yesno_pct": 9.23,
+  "yesno_Acc_pct": 50.83,
+  "yes_rate_pct": 4.17,
+  "confusion": {
+    "TP": 6,
+    "FP": 4,
+    "FN": 114,
+    "TN": 116,
+    "invalid": 0,
+    "n_yesno": 240
+  },
+  "config": {
+    "model_name": "Motion-o",
+    "sampling": "f2c",
+    "num_frames": 8,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "/Users/dhairyabhatia/Downloads/MotionBlind-results-raw/motion_o_mbhuman_default_*.json",
+    "dataset": "mbhuman"
+  },
+  "_derived": true
+}

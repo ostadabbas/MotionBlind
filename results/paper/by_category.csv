@@ -1,0 +1,29 @@
+model,category,I_Acc,Acc,n_instances
+Qwen3-VL-4B,speed,0.0,50.0,7
+Qwen3-VL-4B,magnitude,0.0,50.9,27
+Qwen3-VL-4B,direction (translational),22.2,69.4,18
+Qwen3-VL-4B,direction (rotational),0.0,53.1,8
+Eagle2.5-8B,speed,0.0,50.0,7
+Eagle2.5-8B,magnitude,0.0,50.0,27
+Eagle2.5-8B,direction (translational),33.3,72.2,18
+Eagle2.5-8B,direction (rotational),0.0,59.4,8
+Inkling-Small,speed,0.0,53.6,7
+Inkling-Small,magnitude,0.0,50.9,27
+Inkling-Small,direction (translational),16.7,62.5,18
+Inkling-Small,direction (rotational),0.0,50.0,8
+Motion-o (7B),speed,0.0,50.0,7
+Motion-o (7B),magnitude,0.0,49.1,27
+Motion-o (7B),direction (translational),22.2,68.1,18
+Motion-o (7B),direction (rotational),0.0,50.0,8
+Molmo2-8B,speed,0.0,50.0,7
+Molmo2-8B,magnitude,0.0,50.0,27
+Molmo2-8B,direction (translational),5.6,62.5,18
+Molmo2-8B,direction (rotational),0.0,53.1,8
+Gemini 3.1 Pro,speed,14.3,67.9,7
+Gemini 3.1 Pro,magnitude,48.1,75.0,27
+Gemini 3.1 Pro,direction (translational),77.8,90.3,18
+Gemini 3.1 Pro,direction (rotational),50.0,78.1,8
+GPT-5.6,speed,0.0,46.4,7
+GPT-5.6,magnitude,0.0,49.1,27
+GPT-5.6,direction (translational),38.9,72.2,18
+GPT-5.6,direction (rotational),0.0,50.0,8

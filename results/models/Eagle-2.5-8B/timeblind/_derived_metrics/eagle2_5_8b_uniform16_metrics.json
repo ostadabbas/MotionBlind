@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.3333333333333333,
+  "V_Acc": 0.4675,
+  "Acc": 0.65625,
+  "I_Acc": 0.21333333333333335,
+  "F1_yesno_pct": 67.94,
+  "yesno_Acc_pct": 62.17,
+  "yes_rate_pct": 68.0,
+  "confusion": {
+    "TP": 481,
+    "FP": 335,
+    "FN": 119,
+    "TN": 265,
+    "invalid": 0,
+    "n_yesno": 1200
+  },
+  "config": {
+    "model_name": "Eagle-2.5-8B",
+    "sampling": "uniform",
+    "num_frames": 16,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "results/eagle2_5_8b_timeblind_default_*.json",
+    "dataset": "timeblind"
+  },
+  "_derived": true
+}

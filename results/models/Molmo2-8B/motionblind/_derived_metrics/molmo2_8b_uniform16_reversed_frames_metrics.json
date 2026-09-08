@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.06666666666666667,
+  "V_Acc": 0.11666666666666667,
+  "Acc": 0.5083333333333333,
+  "I_Acc": 0.016666666666666666,
+  "F1_yesno_pct": 61.44,
+  "yesno_Acc_pct": 50.83,
+  "yes_rate_pct": 77.5,
+  "confusion": {
+    "TP": 94,
+    "FP": 92,
+    "FN": 26,
+    "TN": 28,
+    "invalid": 0,
+    "n_yesno": 240
+  },
+  "config": {
+    "model_name": "Molmo2-8B",
+    "sampling": "uniform",
+    "num_frames": 16,
+    "ablation": "reversed_frames",
+    "prompt_template": "default",
+    "source": "results/molmo/molmo2_8b_motionblindv2_default_uniform16_rev.json",
+    "dataset": "mbhuman"
+  },
+  "_derived": true
+}

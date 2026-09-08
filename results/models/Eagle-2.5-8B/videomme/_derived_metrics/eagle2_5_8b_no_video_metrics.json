@@ -1,0 +1,115 @@
+{
+  "Acc": 0.43666666666666665,
+  "Acc_pct": 43.666666666666664,
+  "Acc_ci95": [
+    41.806153163907695,
+    45.54517688442058
+  ],
+  "n": 2700,
+  "correct": 1179,
+  "invalid": 0,
+  "chance_pct": 25.0,
+  "majority_baseline_pct": 27.22222222222222,
+  "majority_letter": "B",
+  "gt_distribution": {
+    "A": 677,
+    "B": 735,
+    "C": 684,
+    "D": 604
+  },
+  "choice_distribution": {
+    "A": 560,
+    "B": 936,
+    "C": 690,
+    "D": 514
+  },
+  "by_duration": {
+    "long": {
+      "Acc_pct": 46.22222222222222,
+      "correct": 416,
+      "n": 900
+    },
+    "medium": {
+      "Acc_pct": 43.666666666666664,
+      "correct": 393,
+      "n": 900
+    },
+    "short": {
+      "Acc_pct": 41.111111111111114,
+      "correct": 370,
+      "n": 900
+    }
+  },
+  "by_task_type": {
+    "Action Reasoning": {
+      "Acc_pct": 44.21052631578947,
+      "correct": 126,
+      "n": 285
+    },
+    "Action Recognition": {
+      "Acc_pct": 46.00638977635783,
+      "correct": 144,
+      "n": 313
+    },
+    "Attribute Perception": {
+      "Acc_pct": 40.990990990990994,
+      "correct": 91,
+      "n": 222
+    },
+    "Counting Problem": {
+      "Acc_pct": 40.67164179104478,
+      "correct": 109,
+      "n": 268
+    },
+    "Information Synopsis": {
+      "Acc_pct": 56.34674922600619,
+      "correct": 182,
+      "n": 323
+    },
+    "OCR Problems": {
+      "Acc_pct": 33.093525179856115,
+      "correct": 46,
+      "n": 139
+    },
+    "Object Reasoning": {
+      "Acc_pct": 45.59471365638767,
+      "correct": 207,
+      "n": 454
+    },
+    "Object Recognition": {
+      "Acc_pct": 34.463276836158194,
+      "correct": 122,
+      "n": 354
+    },
+    "Spatial Perception": {
+      "Acc_pct": 44.44444444444444,
+      "correct": 24,
+      "n": 54
+    },
+    "Spatial Reasoning": {
+      "Acc_pct": 37.5,
+      "correct": 21,
+      "n": 56
+    },
+    "Temporal Perception": {
+      "Acc_pct": 54.54545454545455,
+      "correct": 30,
+      "n": 55
+    },
+    "Temporal Reasoning": {
+      "Acc_pct": 43.50282485875706,
+      "correct": 77,
+      "n": 177
+    }
+  },
+  "config": {
+    "model_name": "Eagle-2.5-8B",
+    "sampling": "none",
+    "num_frames": 0,
+    "ablation": "no_video",
+    "prompt_template": "default",
+    "source": "results/eagle2_5_8b_videomme_default_*.json",
+    "dataset": "videomme"
+  },
+  "_derived": true
+}

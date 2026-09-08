@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.016666666666666666,
+  "V_Acc": 0.016666666666666666,
+  "Acc": 0.5,
+  "I_Acc": 0.0,
+  "F1_yesno_pct": 3.23,
+  "yesno_Acc_pct": 50.0,
+  "yes_rate_pct": 1.67,
+  "confusion": {
+    "TP": 2,
+    "FP": 2,
+    "FN": 118,
+    "TN": 118,
+    "invalid": 0,
+    "n_yesno": 240
+  },
+  "config": {
+    "model_name": "GPT-5.6-Luna-720x1280",
+    "sampling": "uniform",
+    "num_frames": 1,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "results/gpt_5_6_luna_hires_mbhuman_*.json",
+    "dataset": "mbhuman"
+  },
+  "_derived": true
+}

@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.21666666666666667,
+  "V_Acc": 0.19166666666666668,
+  "Acc": 0.5833333333333334,
+  "I_Acc": 0.08333333333333333,
+  "F1_yesno_pct": 46.81,
+  "yesno_Acc_pct": 58.33,
+  "yes_rate_pct": 28.33,
+  "confusion": {
+    "TP": 44,
+    "FP": 24,
+    "FN": 76,
+    "TN": 96,
+    "invalid": 0,
+    "n_yesno": 240
+  },
+  "config": {
+    "model_name": "Qwen3-VL-4B",
+    "sampling": "uniform",
+    "num_frames": 8,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "/Users/dhairyabhatia/Downloads/MotionBlind-results-raw/qwen3_vl_4b_mbhuman_*.json",
+    "dataset": "mbhuman"
+  },
+  "_derived": true
+}

@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.025,
+  "V_Acc": 0.03333333333333333,
+  "Acc": 0.5041666666666667,
+  "I_Acc": 0.0,
+  "F1_yesno_pct": 6.3,
+  "yesno_Acc_pct": 50.42,
+  "yes_rate_pct": 2.92,
+  "confusion": {
+    "TP": 4,
+    "FP": 3,
+    "FN": 116,
+    "TN": 117,
+    "invalid": 0,
+    "n_yesno": 240
+  },
+  "config": {
+    "model_name": "Motion-o",
+    "sampling": "hornet",
+    "num_frames": 4,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "results/motion_o_mb_default_*.json",
+    "dataset": "mbhuman"
+  },
+  "_derived": true
+}

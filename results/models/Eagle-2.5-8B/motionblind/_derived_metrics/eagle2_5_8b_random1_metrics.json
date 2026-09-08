@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.05,
+  "V_Acc": 0.075,
+  "Acc": 0.4791666666666667,
+  "I_Acc": 0.0,
+  "F1_yesno_pct": 56.45,
+  "yesno_Acc_pct": 47.92,
+  "yes_rate_pct": 69.58,
+  "confusion": {
+    "TP": 81,
+    "FP": 86,
+    "FN": 39,
+    "TN": 34,
+    "invalid": 0,
+    "n_yesno": 240
+  },
+  "config": {
+    "model_name": "Eagle-2.5-8B",
+    "sampling": "random",
+    "num_frames": 1,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "results/eagle2_5_8b_mb_default_*.json",
+    "dataset": "mbhuman"
+  },
+  "_derived": true
+}

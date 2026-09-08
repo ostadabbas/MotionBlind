@@ -1,0 +1,279 @@
+strategy,nframes,ablation,index,instance_id,video_path,question,gold,model_output,extracted,correct,frame_indices,f2c_scales,error,pred_file
+random,4,none,0,0,videos/02_00_0.mp4,Does the person stir faster the first time compared to the second time?,yes,No.,no,0,33 110 325 364,,,motion_o_mb_default_random4.json
+random,4,none,1,0,videos/02_00_1.mp4,Does the person stir faster the first time compared to the second time?,no,No.,no,1,100 116 232 247,,,motion_o_mb_default_random4.json
+random,4,none,2,0,videos/02_00_0.mp4,Does the person stir slower the first time compared to the second time?,no,No.,no,1,33 110 325 364,,,motion_o_mb_default_random4.json
+random,4,none,3,0,videos/02_00_1.mp4,Does the person stir slower the first time compared to the second time?,yes,No.,no,0,100 116 232 247,,,motion_o_mb_default_random4.json
+random,4,none,4,1,videos/02_01_0.mp4,Does the drawer close faster the first time compared to the second time?,yes,No.,no,0,91 123 161 177,,,motion_o_mb_default_random4.json
+random,4,none,5,1,videos/02_01_1.mp4,Does the drawer close faster the first time compared to the second time?,no,No.,no,1,44 81 116 175,,,motion_o_mb_default_random4.json
+random,4,none,6,1,videos/02_01_0.mp4,Does the drawer close slower the first time compared to the second time?,no,No.,no,1,91 123 161 177,,,motion_o_mb_default_random4.json
+random,4,none,7,1,videos/02_01_1.mp4,Does the drawer close slower the first time compared to the second time?,yes,No.,no,0,44 81 116 175,,,motion_o_mb_default_random4.json
+random,4,none,8,2,videos/02_02_0.mp4,Does the person open their hand faster the first time compared to the second time?,yes,No.,no,0,13 15 40 55,,,motion_o_mb_default_random4.json
+random,4,none,9,2,videos/02_02_1.mp4,Does the person open their hand faster the first time compared to the second time?,no,No.,no,1,42 70 90 98,,,motion_o_mb_default_random4.json
+random,4,none,10,2,videos/02_02_0.mp4,Does the person open their hand slower the first time compared to the second time?,no,No.,no,1,13 15 40 55,,,motion_o_mb_default_random4.json
+random,4,none,11,2,videos/02_02_1.mp4,Does the person open their hand slower the first time compared to the second time?,yes,No.,no,0,42 70 90 98,,,motion_o_mb_default_random4.json
+random,4,none,12,3,videos/02_03_0.mp4,Does the person press the pillow faster the first time compared to the second time?,yes,No.,no,0,32 34 53 118,,,motion_o_mb_default_random4.json
+random,4,none,13,3,videos/02_03_1.mp4,Does the person press the pillow faster the first time compared to the second time?,no,No.,no,1,1 26 40 72,,,motion_o_mb_default_random4.json
+random,4,none,14,3,videos/02_03_0.mp4,Does the person press the pillow slower the first time compared to the second time?,no,No.,no,1,32 34 53 118,,,motion_o_mb_default_random4.json
+random,4,none,15,3,videos/02_03_1.mp4,Does the person press the pillow slower the first time compared to the second time?,yes,No.,no,0,1 26 40 72,,,motion_o_mb_default_random4.json
+random,4,none,16,4,videos/02_04_0.mp4,"Once off the ramp, does the ball move faster the first time compared to the second time?",yes,No.,no,0,3 36 53 59,,,motion_o_mb_default_random4.json
+random,4,none,17,4,videos/02_04_1.mp4,"Once off the ramp, does the ball move faster the first time compared to the second time?",no,No.,no,1,23 28 40 72,,,motion_o_mb_default_random4.json
+random,4,none,18,4,videos/02_04_0.mp4,"Once off the ramp, does the ball move slower the first time compared to the second time?",no,No.,no,1,3 36 53 59,,,motion_o_mb_default_random4.json
+random,4,none,19,4,videos/02_04_1.mp4,"Once off the ramp, does the ball move slower the first time compared to the second time?",yes,No.,no,0,23 28 40 72,,,motion_o_mb_default_random4.json
+random,4,none,20,5,videos/02_05_0.mp4,Does the ball travel faster in the second push compared to the first?,yes,No.,no,0,16 173 236 237,,,motion_o_mb_default_random4.json
+random,4,none,21,5,videos/02_05_1.mp4,Does the ball travel faster in the second push compared to the first?,no,No.,no,1,18 76 131 231,,,motion_o_mb_default_random4.json
+random,4,none,22,5,videos/02_05_0.mp4,Does the ball travel faster in the first push compared to the second?,no,No.,no,1,16 173 236 237,,,motion_o_mb_default_random4.json
+random,4,none,23,5,videos/02_05_1.mp4,Does the ball travel faster in the first push compared to the second?,yes,No.,no,0,18 76 131 231,,,motion_o_mb_default_random4.json
+random,4,none,24,6,videos/02_05_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,16 173 236 237,,,motion_o_mb_default_random4.json
+random,4,none,25,6,videos/02_05_1.mp4,Is the first push weaker than the second one?,no,"No.
+
+The person in the video appears to be rolling two small objects, possibly marbles, across a white table with their hands. The sequence of frames shows that after each roll, there is an observable difference in distance covered by the object on its subsequent attempt compared to the previous one. This suggests that the force applied (push) for the second roll was not as strong as it could have been if they were aiming for maximum distance from the start point. Therefore, based solely on this visual evidence and without additional context about the specific conditions under which these rolls occurred, we can infer that the initial push might indeed have been stronger relative to what seems necessary given the observed distances. However, since no explicit comparison between ""first"" versus any other specific instance within multiple attempts has been made here directly through provided images alone—only comparing consecutive actions—we cannot definitively conclude whether all pushes were consistently weak or varied significantly enough to label them uniformly so. Thus, while some observations suggest variability among individual pushes during sequential trials shown, making generalizations beyond immediate comparisons remains speculative when only limited data points exist visually presented herein.",no,1,18 76 131 231,,,motion_o_mb_default_random4.json
+random,4,none,26,6,videos/02_05_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,16 173 236 237,,,motion_o_mb_default_random4.json
+random,4,none,27,6,videos/02_05_1.mp4,Is the first push stronger than the second one?,yes,"No.
+
+The video shows two pushes of marbles on a table, and it appears that both pushes have similar distances covered by their respective marbles before they stop rolling. The speed at which each marble rolls does not seem to differ significantly between the two attempts based solely on this visual evidence from the video frames provided. Therefore, we cannot conclude with certainty whether the first push was stronger (i.e., resulted in faster movement) compared to the second one just from these still images alone; however, if asked about relative strength as per distance traveled, there is no clear indication here either way since both appear equally distant upon stopping. Thus, without more information such as time intervals for each roll's duration after being pushed, we must remain neutral regarding any claim concerning comparative force applied during those initial pushes shown within our observation window.",no,0,18 76 131 231,,,motion_o_mb_default_random4.json
+random,4,none,28,7,videos/09_00_0.mp4,Does the box travel farther in the second push compared to the first?,yes,No.,no,0,52 75 86 94,,,motion_o_mb_default_random4.json
+random,4,none,29,7,videos/09_00_1.mp4,Does the box travel farther in the second push compared to the first?,no,No.,no,1,14 23 94 107,,,motion_o_mb_default_random4.json
+random,4,none,30,7,videos/09_00_0.mp4,Does the box travel farther in the first push compared to the second?,no,No.,no,1,52 75 86 94,,,motion_o_mb_default_random4.json
+random,4,none,31,7,videos/09_00_1.mp4,Does the box travel farther in the first push compared to the second?,yes,No.,no,0,14 23 94 107,,,motion_o_mb_default_random4.json
+random,4,none,32,8,videos/09_00_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,52 75 86 94,,,motion_o_mb_default_random4.json
+random,4,none,33,8,videos/09_00_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,14 23 94 107,,,motion_o_mb_default_random4.json
+random,4,none,34,8,videos/09_00_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,52 75 86 94,,,motion_o_mb_default_random4.json
+random,4,none,35,8,videos/09_00_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,14 23 94 107,,,motion_o_mb_default_random4.json
+random,4,none,36,9,videos/09_01_0.mp4,Does the puck travel farther in the second push compared to the first?,yes,No.,no,0,10 53 66 119,,,motion_o_mb_default_random4.json
+random,4,none,37,9,videos/09_01_1.mp4,Does the puck travel farther in the second push compared to the first?,no,No.,no,1,79 80 85 89,,,motion_o_mb_default_random4.json
+random,4,none,38,9,videos/09_01_0.mp4,Does the puck travel farther in the first push compared to the second?,no,No.,no,1,10 53 66 119,,,motion_o_mb_default_random4.json
+random,4,none,39,9,videos/09_01_1.mp4,Does the puck travel farther in the first push compared to the second?,yes,No.,no,0,79 80 85 89,,,motion_o_mb_default_random4.json
+random,4,none,40,10,videos/09_01_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,10 53 66 119,,,motion_o_mb_default_random4.json
+random,4,none,41,10,videos/09_01_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,79 80 85 89,,,motion_o_mb_default_random4.json
+random,4,none,42,10,videos/09_01_0.mp4,Is the first push stronger than the second one?,no,"No.
+
+The video shows two pushes of different objects on an inclined plane, but it does not provide enough information to determine if they were applied with equal strength based solely on visual observation in this short clip. The speed and distance traveled by each object after being pushed can give some indication about their initial velocity (which is related to force), assuming no significant frictional losses between them; however, without knowing how much time has passed for both objects' motion or any other details like mass differences that could affect acceleration due to gravity, we cannot definitively say whether the first push was stronger than the second just from observing these frames alone. Therefore, I would need more data points before making such comparisons confidently within the context provided here.",no,1,10 53 66 119,,,motion_o_mb_default_random4.json
+random,4,none,43,10,videos/09_01_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,79 80 85 89,,,motion_o_mb_default_random4.json
+random,4,none,44,11,videos/09_02_0.mp4,Does the toy car travel farther in the second push compared to the first?,yes,No.,no,0,16 18 19 121,,,motion_o_mb_default_random4.json
+random,4,none,45,11,videos/09_02_1.mp4,Does the toy car travel farther in the second push compared to the first?,no,No.,no,1,37 54 75 93,,,motion_o_mb_default_random4.json
+random,4,none,46,11,videos/09_02_0.mp4,Does the toy car travel farther in the first push compared to the second?,no,No.,no,1,16 18 19 121,,,motion_o_mb_default_random4.json
+random,4,none,47,11,videos/09_02_1.mp4,Does the toy car travel farther in the first push compared to the second?,yes,No.,no,0,37 54 75 93,,,motion_o_mb_default_random4.json
+random,4,none,48,12,videos/09_02_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,16 18 19 121,,,motion_o_mb_default_random4.json
+random,4,none,49,12,videos/09_02_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,37 54 75 93,,,motion_o_mb_default_random4.json
+random,4,none,50,12,videos/09_02_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,16 18 19 121,,,motion_o_mb_default_random4.json
+random,4,none,51,12,videos/09_02_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,37 54 75 93,,,motion_o_mb_default_random4.json
+random,4,none,52,13,videos/09_03_0.mp4,Does the ball travel farther in the second push compared to the first?,yes,No.,no,0,44 112 167 245,,,motion_o_mb_default_random4.json
+random,4,none,53,13,videos/09_03_1.mp4,Does the ball travel farther in the second push compared to the first?,no,No.,no,1,1 59 100 110,,,motion_o_mb_default_random4.json
+random,4,none,54,13,videos/09_03_0.mp4,Does the ball travel farther in the first push compared to the second?,no,No.,no,1,44 112 167 245,,,motion_o_mb_default_random4.json
+random,4,none,55,13,videos/09_03_1.mp4,Does the ball travel farther in the first push compared to the second?,yes,No.,no,0,1 59 100 110,,,motion_o_mb_default_random4.json
+random,4,none,56,14,videos/09_03_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,44 112 167 245,,,motion_o_mb_default_random4.json
+random,4,none,57,14,videos/09_03_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,1 59 100 110,,,motion_o_mb_default_random4.json
+random,4,none,58,14,videos/09_03_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,44 112 167 245,,,motion_o_mb_default_random4.json
+random,4,none,59,14,videos/09_03_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,1 59 100 110,,,motion_o_mb_default_random4.json
+random,4,none,60,15,videos/09_04_0.mp4,Does the ball travel farther in the second push compared to the first?,yes,No.,no,0,16 369 388 393,,,motion_o_mb_default_random4.json
+random,4,none,61,15,videos/09_04_1.mp4,Does the ball travel farther in the second push compared to the first?,no,No.,no,1,236 324 396 463,,,motion_o_mb_default_random4.json
+random,4,none,62,15,videos/09_04_0.mp4,Does the ball travel farther in the first push compared to the second?,no,No.,no,1,16 369 388 393,,,motion_o_mb_default_random4.json
+random,4,none,63,15,videos/09_04_1.mp4,Does the ball travel farther in the first push compared to the second?,yes,No.,no,0,236 324 396 463,,,motion_o_mb_default_random4.json
+random,4,none,64,16,videos/09_04_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,16 369 388 393,,,motion_o_mb_default_random4.json
+random,4,none,65,16,videos/09_04_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,236 324 396 463,,,motion_o_mb_default_random4.json
+random,4,none,66,16,videos/09_04_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,16 369 388 393,,,motion_o_mb_default_random4.json
+random,4,none,67,16,videos/09_04_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,236 324 396 463,,,motion_o_mb_default_random4.json
+random,4,none,68,17,videos/09_04_0.mp4,Does the ball travel faster in the second push compared to the first?,yes,No.,no,0,16 369 388 393,,,motion_o_mb_default_random4.json
+random,4,none,69,17,videos/09_04_1.mp4,Does the ball travel faster in the second push compared to the first?,no,No.,no,1,236 324 396 463,,,motion_o_mb_default_random4.json
+random,4,none,70,17,videos/09_04_0.mp4,Does the ball travel faster in the first push compared to the second?,no,No.,no,1,16 369 388 393,,,motion_o_mb_default_random4.json
+random,4,none,71,17,videos/09_04_1.mp4,Does the ball travel faster in the first push compared to the second?,yes,No.,no,0,236 324 396 463,,,motion_o_mb_default_random4.json
+random,4,none,72,18,videos/09_05_0.mp4,Does the ball that starts closer to the camera roll further?,yes,No,no,0,25 29 64 72,,,motion_o_mb_default_random4.json
+random,4,none,73,18,videos/09_05_1.mp4,Does the ball that starts closer to the camera roll further?,no,No,no,1,49 111 119 173,,,motion_o_mb_default_random4.json
+random,4,none,74,18,videos/09_05_0.mp4,Does the ball that starts farther from the camera roll further?,no,No,no,1,25 29 64 72,,,motion_o_mb_default_random4.json
+random,4,none,75,18,videos/09_05_1.mp4,Does the ball that starts farther from the camera roll further?,yes,No,no,0,49 111 119 173,,,motion_o_mb_default_random4.json
+random,4,none,76,19,videos/09_05_0.mp4,Is the ball that starts closer to the camera pushed harder?,yes,No.,no,0,25 29 64 72,,,motion_o_mb_default_random4.json
+random,4,none,77,19,videos/09_05_1.mp4,Is the ball that starts closer to the camera pushed harder?,no,No,no,1,49 111 119 173,,,motion_o_mb_default_random4.json
+random,4,none,78,19,videos/09_05_0.mp4,Is the ball that starts further from the camera pushed harder?,no,No.,no,1,25 29 64 72,,,motion_o_mb_default_random4.json
+random,4,none,79,19,videos/09_05_1.mp4,Is the ball that starts further from the camera pushed harder?,yes,"No.
+
+The video shows two balls rolling on a blue patterned floor towards an open door at opposite ends of the room. The distance each ball travels before reaching its destination appears to be similar, suggesting they were likely rolled with comparable force and speed by their respective players. Therefore, it is not possible to determine if one was pushed ""harder"" than the other based solely on this visual information alone without additional context about how hard each player applied pressure when pushing them forward initially.",no,0,49 111 119 173,,,motion_o_mb_default_random4.json
+random,4,none,80,20,videos/09_06_0.mp4,"From the camera's point of view, does the right disk move further?",yes,No.,no,0,5 33 105 116,,,motion_o_mb_default_random4.json
+random,4,none,81,20,videos/09_06_1.mp4,"From the camera's point of view, does the right disk move further?",no,No,no,1,73 107 114 134,,,motion_o_mb_default_random4.json
+random,4,none,82,20,videos/09_06_0.mp4,"From the camera's point of view, does the left disk move further?",no,No.,no,1,5 33 105 116,,,motion_o_mb_default_random4.json
+random,4,none,83,20,videos/09_06_1.mp4,"From the camera's point of view, does the left disk move further?",yes,No,no,0,73 107 114 134,,,motion_o_mb_default_random4.json
+random,4,none,84,21,videos/09_06_0.mp4,Is the disk at the camera's right pushed harder?,yes,No,no,0,5 33 105 116,,,motion_o_mb_default_random4.json
+random,4,none,85,21,videos/09_06_1.mp4,Is the disk at the camera's right pushed harder?,no,No,no,1,73 107 114 134,,,motion_o_mb_default_random4.json
+random,4,none,86,21,videos/09_06_0.mp4,Is the disk at the camera's left pushed harder?,no,No.,no,1,5 33 105 116,,,motion_o_mb_default_random4.json
+random,4,none,87,21,videos/09_06_1.mp4,Is the disk at the camera's left pushed harder?,yes,No,no,0,73 107 114 134,,,motion_o_mb_default_random4.json
+random,4,none,88,22,videos/09_07_0.mp4,Is the magnitude of the pendulum arc smaller the first time compared to the second time?,yes,"No.
+
+The image shows two different positions of the pendulum, indicating that it has been released twice with varying magnitudes and directions for each release. The first position appears more horizontal than vertical, suggesting less amplitude in its swing path when compared to the second position where the string is almost perpendicular from the table's surface, showing greater amplitude (larger angle). Therefore, based on visual observation alone without specific measurements, we can infer this conclusion about their relative amplitudes after one complete cycle. However, note: actual measurement would be needed for precise comparison between these two instances shown here visually.",no,0,3 51 145 263,,,motion_o_mb_default_random4.json
+random,4,none,89,22,videos/09_07_1.mp4,Is the magnitude of the pendulum arc smaller the first time compared to the second time?,no,"No.
+
+The video shows two attempts at swinging the pendulum, and in both cases, it swings back with some amplitude before coming to rest again on its support block. The size (magnitude) of this swing appears consistent between the two attempts; there is no noticeable difference that would suggest one attempt has less ""arc"" than the other based solely on visual inspection here. However, if you're asking about any potential differences not visible due to limitations like frame rate or resolution, we cannot determine from just these frames alone whether such subtle variations exist without further analysis tools.",no,1,213 377 391 432,,,motion_o_mb_default_random4.json
+random,4,none,90,22,videos/09_07_0.mp4,Is the magnitude of the pendulum arc larger the first time compared to the second time?,no,"No.
+
+The image shows two separate instances where an object is being pulled by strings attached to it, causing it to swing in arcs on top of what appears to be a smartphone. The size and shape of these arcs seem consistent across both frames provided; there's no indication that one arc is significantly larger than the other based solely on this visual information alone without further context about how they were measured relative to each other (e.g., if they started from different positions). Therefore, we cannot definitively conclude whether ""the magnitude"" - which implies some kind of measurement like length or angle - was indeed greater for either instance just looking at static images here. If you have more details such as measurements taken during actual swings, those would provide clearer insight into any differences between them regarding their magnitudes.",no,1,3 51 145 263,,,motion_o_mb_default_random4.json
+random,4,none,91,22,videos/09_07_1.mp4,Is the magnitude of the pendulum arc larger the first time compared to the second time?,yes,"No.
+
+The video shows two attempts at swinging the pendulum, and in both cases, it swings back with an approximately equal amplitude from its initial position on each side before coming to rest again near where it started. The size (or ""magnitude"") of the swing does not appear significantly different between these two trials based solely on visual inspection without further quantitative data for comparison. Therefore, we cannot definitively conclude that one is larger than another just by looking; however, if asked whether there's any noticeable difference visually - no significant change can be observed here either way within this context provided only once per trial shown consecutively. Thus, considering what was seen clearly enough: **no**, they do seem roughly similar regarding their arcs' magnitudes during those specific instances captured together sequentially as presented above.",no,0,213 377 391 432,,,motion_o_mb_default_random4.json
+random,4,none,92,23,videos/09_08_0.mp4,Is the drawer pulled out farther the first time compared to the second time?,yes,No.,no,0,38 44 82 182,,,motion_o_mb_default_random4.json
+random,4,none,93,23,videos/09_08_1.mp4,Is the drawer pulled out farther the first time compared to the second time?,no,No.,no,1,124 174 202 206,,,motion_o_mb_default_random4.json
+random,4,none,94,23,videos/09_08_0.mp4,Is the drawer pulled out less the first time compared to the second time?,no,No.,no,1,38 44 82 182,,,motion_o_mb_default_random4.json
+random,4,none,95,23,videos/09_08_1.mp4,Is the drawer pulled out less the first time compared to the second time?,yes,No.,no,0,124 174 202 206,,,motion_o_mb_default_random4.json
+random,4,none,96,24,videos/09_09_0.mp4,Is the magnitude of the person's arm swing smaller the first time compared to the second time?,yes,No.,no,0,119 147 209 215,,,motion_o_mb_default_random4.json
+random,4,none,97,24,videos/09_09_1.mp4,Is the magnitude of the person's arm swing smaller the first time compared to the second time?,no,No.,no,1,8 117 156 209,,,motion_o_mb_default_random4.json
+random,4,none,98,24,videos/09_09_0.mp4,Is the magnitude of the person's arm swing larger the first time compared to the second time?,no,No.,no,1,119 147 209 215,,,motion_o_mb_default_random4.json
+random,4,none,99,24,videos/09_09_1.mp4,Is the magnitude of the person's arm swing larger the first time compared to the second time?,yes,No.,no,0,8 117 156 209,,,motion_o_mb_default_random4.json
+random,4,none,100,25,videos/09_10_0.mp4,Is the magnitude of the ball's first bounce smaller the first time compared to the second time?,yes,No.,no,0,0 4 57 89,,,motion_o_mb_default_random4.json
+random,4,none,101,25,videos/09_10_1.mp4,Is the magnitude of the ball's first bounce smaller the first time compared to the second time?,no,No.,no,1,26 52 80 122,,,motion_o_mb_default_random4.json
+random,4,none,102,25,videos/09_10_0.mp4,Is the magnitude of the ball's first bounce larger the first time compared to the second time?,no,"No.
+
+The image shows two frames where an individual is interacting with what appears to be a small yellow object, possibly a ball. The sequence suggests that after the initial interaction (where it seems like they were about to throw or catch something), there was another moment captured in which no further action involving this object occurred before its final position on the floor became visible again. 
+
+Given these observations and assuming typical behavior for such interactions:
+
+1) If we consider ""the first bounce"" as immediately following their initial attempt at throwing/catching.
+2) And if by 'second' you mean any subsequent movement or change related directly back to them handling/throwing/catching the same item.
+
+In both cases here:
+- There isn't enough information provided within just one frame to determine whether *any* bounces happened between those moments shown; only positions relative to each other can be inferred from visual data alone without additional context or motion capture.
+  
+Therefore based solely upon available evidence presented visually: **No**, cannot definitively conclude magnitudes of hypothetical bounces exist beyond observed static states.",no,1,0 4 57 89,,,motion_o_mb_default_random4.json
+random,4,none,103,25,videos/09_10_1.mp4,Is the magnitude of the ball's first bounce larger the first time compared to the second time?,yes,"No.
+
+The image shows two bounces, and it appears that both have similar magnitudes based on their height relative to each other in the frame. The initial drop is not visible here but can be inferred from the position before impact with the floor for comparison purposes. If we assume they were dropped at roughly equal heights initially (which isn't explicitly shown), then there doesn't seem to be an observable difference between the sizes of these two bounces as depicted within this single snapshot sequence. However, without more context about how high above ground level was used during drops leading up to those specific moments captured by camera, one cannot definitively conclude whether any observed differences truly reflect changes over multiple trials rather than just random variation inherent when bouncing balls indoors under controlled conditions like lighting and surface type. Therefore, while visually comparing them side-by-side suggests no significant change occurs across these two instances alone; further investigation would need additional data points beyond what’s presented herewithin order draw definitive conclusions regarding consistency vs variability amongst subsequent impacts experienced throughout entire series of tests conducted using same setup parameters otherwise held constant throughout experiment duration.",no,0,26 52 80 122,,,motion_o_mb_default_random4.json
+random,4,none,104,26,videos/09_11_0.mp4,Does the ball travel farther the second time compared to the first time?,yes,No.,no,0,5 13 31 181,,,motion_o_mb_default_random4.json
+random,4,none,105,26,videos/09_11_1.mp4,Does the ball travel farther the second time compared to the first time?,no,No.,no,1,130 197 286 295,,,motion_o_mb_default_random4.json
+random,4,none,106,26,videos/09_11_0.mp4,Does the ball travel farther the first time compared to the second time?,no,No.,no,1,5 13 31 181,,,motion_o_mb_default_random4.json
+random,4,none,107,26,videos/09_11_1.mp4,Does the ball travel farther the first time compared to the second time?,yes,No.,no,0,130 197 286 295,,,motion_o_mb_default_random4.json
+random,4,none,108,27,videos/09_11_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,5 13 31 181,,,motion_o_mb_default_random4.json
+random,4,none,109,27,videos/09_11_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,130 197 286 295,,,motion_o_mb_default_random4.json
+random,4,none,110,27,videos/09_11_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,5 13 31 181,,,motion_o_mb_default_random4.json
+random,4,none,111,27,videos/09_11_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,130 197 286 295,,,motion_o_mb_default_random4.json
+random,4,none,112,28,videos/09_11_0.mp4,Is the magnitude of the ball's velocity smaller the first time compared to the second time?,yes,"No.
+
+The video shows two instances where an object is thrown across the floor, and in both cases, it appears that the initial throw results in less distance covered before coming to rest on the carpeted surface than when it was thrown again later with more force. Therefore, based solely on visual observation from these frames alone without additional context about the speed at which each instance occurred (which would be necessary for precise measurement), one could infer that there might have been some variation between throws but not necessarily indicating ""smaller"" vs larger velocities per se; rather just different amounts of energy imparted into motion during those specific actions captured within this short clip. However strictly speaking regarding only what can be seen here - yes indeed the apparent trajectory suggests lesser travel range initially followed by greater reach upon subsequent attempt implying higher starting momentum/velocity applied then.",no,0,5 13 31 181,,,motion_o_mb_default_random4.json
+random,4,none,113,28,videos/09_11_1.mp4,Is the magnitude of the ball's velocity smaller the first time compared to the second time?,no,"No.
+
+The image shows two different moments in which an object (likely a ball) is on the floor, but it does not provide enough information about its motion between these times to determine if there was any change in speed relative to gravity and surface friction over that period. The question assumes knowledge beyond what can be directly observed from still images alone without additional context such as video footage showing how long each instance lasted or other objects for scale comparison. Therefore based solely upon this static photo sequence we cannot accurately answer whether one event occurred faster than another regarding changes in velocity due only to gravitational pull acting against air resistance and internal forces within the ball itself during flight through space. Thus no definitive yes/no response could be given here considering insufficient data provided by just looking at pictures taken at separate points in time separated by unknown duration intervals.",no,1,130 197 286 295,,,motion_o_mb_default_random4.json
+random,4,none,114,28,videos/09_11_0.mp4,Is the magnitude of the ball's velocity larger the first time compared to the second time?,no,"No.
+
+The video shows two instances where an object is thrown across the room, and in both cases, it appears that the initial throw has more force behind it than subsequent throws. The distance covered by the object suggests different velocities at launch; however, without specific measurements from each instance, we can only infer based on visual observation which seems less clear-cut due to potential variations like air resistance or slight differences in how the person threw the objects. Given this context alone for comparison between these two events within one clip, there isn't enough evidence provided here to definitively state whether ""the magnitude"" (which implies some kind of quantifiable measure) was indeed greater initially versus laterally. Therefore, considering just what’s visible: no definitive answer about magnitudes being strictly 'larger' exists solely through observing motion captured visually as shown above.",no,1,5 13 31 181,,,motion_o_mb_default_random4.json
+random,4,none,115,28,videos/09_11_1.mp4,Is the magnitude of the ball's velocity larger the first time compared to the second time?,yes,"No.
+
+The image shows two different moments in what appears to be an indoor setting, possibly a waiting area with blue carpeting and some furniture visible. The presence of a yellow object (likely a ball) on both occasions suggests that it was thrown twice from outside the frame into this space. However, without additional context such as video footage showing the trajectory and speed at which each throw occurred, we cannot definitively determine if one throw had a greater initial velocity than the other based solely on these still images. Therefore, no conclusion can be drawn about whether the magnitudes of velocities were equal for either instance shown here. If you have access to more frames or information regarding how far away they landed after being thrown initially versus their landing positions now, then further analysis might provide insight; otherwise, there isn't enough evidence within just looking at static photos like those provided above.",no,0,130 197 286 295,,,motion_o_mb_default_random4.json
+random,4,none,116,29,videos/09_12_0.mp4,Does the ball travel farther the second time compared to the first time?,yes,No.,no,0,65 172 281 366,,,motion_o_mb_default_random4.json
+random,4,none,117,29,videos/09_12_1.mp4,Does the ball travel farther the second time compared to the first time?,no,No.,no,1,208 229 284 402,,,motion_o_mb_default_random4.json
+random,4,none,118,29,videos/09_12_0.mp4,Does the ball travel farther the first time compared to the second time?,no,No.,no,1,65 172 281 366,,,motion_o_mb_default_random4.json
+random,4,none,119,29,videos/09_12_1.mp4,Does the ball travel farther the first time compared to the second time?,yes,No.,no,0,208 229 284 402,,,motion_o_mb_default_random4.json
+random,4,none,120,30,videos/09_12_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,65 172 281 366,,,motion_o_mb_default_random4.json
+random,4,none,121,30,videos/09_12_1.mp4,Is the first push weaker than the second one?,no,No,no,1,208 229 284 402,,,motion_o_mb_default_random4.json
+random,4,none,122,30,videos/09_12_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,65 172 281 366,,,motion_o_mb_default_random4.json
+random,4,none,123,30,videos/09_12_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,208 229 284 402,,,motion_o_mb_default_random4.json
+random,4,none,124,31,videos/09_13_0.mp4,Does the person squeeze with more force the first time compared to the second time?,yes,No.,no,0,34 134 157 176,,,motion_o_mb_default_random4.json
+random,4,none,125,31,videos/09_13_1.mp4,Does the person squeeze with more force the first time compared to the second time?,no,No.,no,1,107 166 224 289,,,motion_o_mb_default_random4.json
+random,4,none,126,31,videos/09_13_0.mp4,Does the person squeeze with less force the first time compared to the second time?,no,No.,no,1,34 134 157 176,,,motion_o_mb_default_random4.json
+random,4,none,127,31,videos/09_13_1.mp4,Does the person squeeze with less force the first time compared to the second time?,yes,No.,no,0,107 166 224 289,,,motion_o_mb_default_random4.json
+random,4,none,128,32,videos/09_14_0.mp4,Does the cup travel farther the second time compared to the first time?,yes,No.,no,0,33 47 108 125,,,motion_o_mb_default_random4.json
+random,4,none,129,32,videos/09_14_1.mp4,Does the cup travel farther the second time compared to the first time?,no,No.,no,1,0 40 124 155,,,motion_o_mb_default_random4.json
+random,4,none,130,32,videos/09_14_0.mp4,Does the cup travel farther the first time compared to the second time?,no,No.,no,1,33 47 108 125,,,motion_o_mb_default_random4.json
+random,4,none,131,32,videos/09_14_1.mp4,Does the cup travel farther the first time compared to the second time?,yes,No,no,0,0 40 124 155,,,motion_o_mb_default_random4.json
+random,4,none,132,33,videos/09_14_0.mp4,Does the pendulum strike the cup with less force the first time compared to the second time?,yes,No.,no,0,33 47 108 125,,,motion_o_mb_default_random4.json
+random,4,none,133,33,videos/09_14_1.mp4,Does the pendulum strike the cup with less force the first time compared to the second time?,no,No,no,1,0 40 124 155,,,motion_o_mb_default_random4.json
+random,4,none,134,33,videos/09_14_0.mp4,Does the pendulum strike the cup with more force the first time compared to the second time?,no,No.,no,1,33 47 108 125,,,motion_o_mb_default_random4.json
+random,4,none,135,33,videos/09_14_1.mp4,Does the pendulum strike the cup with more force the first time compared to the second time?,yes,No,no,0,0 40 124 155,,,motion_o_mb_default_random4.json
+random,4,none,136,34,videos/14_00_0.mp4,"From the camera's point of view, is the man walking to the right?",yes,No.,no,0,72 73 105 107,,,motion_o_mb_default_random4.json
+random,4,none,137,34,videos/14_00_1.mp4,"From the camera's point of view, is the man walking to the right?",no,No.,no,1,5 34 64 105,,,motion_o_mb_default_random4.json
+random,4,none,138,34,videos/14_00_0.mp4,"From the camera's point of view, is the man walking to the left?",no,No.,no,1,72 73 105 107,,,motion_o_mb_default_random4.json
+random,4,none,139,34,videos/14_00_1.mp4,"From the camera's point of view, is the man walking to the left?",yes,No.,no,0,5 34 64 105,,,motion_o_mb_default_random4.json
+random,4,none,140,35,videos/14_01_0.mp4,Is the cup moving towards the sink?,yes,Yes.,yes,1,25 68 79 120,,,motion_o_mb_default_random4.json
+random,4,none,141,35,videos/14_01_1.mp4,Is the cup moving towards the sink?,no,No.,no,1,5 20 51 130,,,motion_o_mb_default_random4.json
+random,4,none,142,35,videos/14_01_0.mp4,Is the cup moving away from the sink?,no,No.,no,1,25 68 79 120,,,motion_o_mb_default_random4.json
+random,4,none,143,35,videos/14_01_1.mp4,Is the cup moving away from the sink?,yes,No.,no,0,5 20 51 130,,,motion_o_mb_default_random4.json
+random,4,none,144,36,videos/14_02_0.mp4,Is the man getting closer to the camera?,yes,Yes.,yes,1,9 14 52 90,,,motion_o_mb_default_random4.json
+random,4,none,145,36,videos/14_02_1.mp4,Is the man getting closer to the camera?,no,No.,no,1,27 45 73 102,,,motion_o_mb_default_random4.json
+random,4,none,146,36,videos/14_02_0.mp4,Is the man moving farther from the camera?,no,No.,no,1,9 14 52 90,,,motion_o_mb_default_random4.json
+random,4,none,147,36,videos/14_02_1.mp4,Is the man moving farther from the camera?,yes,No.,no,0,27 45 73 102,,,motion_o_mb_default_random4.json
+random,4,none,148,37,videos/14_03_0.mp4,"From the camera's point of view, is the man moving to the right?",yes,No.,no,0,18 32 46 64,,,motion_o_mb_default_random4.json
+random,4,none,149,37,videos/14_03_1.mp4,"From the camera's point of view, is the man moving to the right?",no,No.,no,1,37 40 43 67,,,motion_o_mb_default_random4.json
+random,4,none,150,37,videos/14_03_0.mp4,"From the camera's point of view, is the man moving to the left?",no,No.,no,1,18 32 46 64,,,motion_o_mb_default_random4.json
+random,4,none,151,37,videos/14_03_1.mp4,"From the camera's point of view, is the man moving to the left?",yes,No.,no,0,37 40 43 67,,,motion_o_mb_default_random4.json
+random,4,none,152,38,videos/14_04_0.mp4,"From the camera's point of view, does the pen roll to the right?",yes,No.,no,0,34 40 54 65,,,motion_o_mb_default_random4.json
+random,4,none,153,38,videos/14_04_1.mp4,"From the camera's point of view, does the pen roll to the right?",no,No.,no,1,46 51 68 74,,,motion_o_mb_default_random4.json
+random,4,none,154,38,videos/14_04_0.mp4,"From the camera's point of view, does the pen roll to the left?",no,No.,no,1,34 40 54 65,,,motion_o_mb_default_random4.json
+random,4,none,155,38,videos/14_04_1.mp4,"From the camera's point of view, does the pen roll to the left?",yes,No,no,0,46 51 68 74,,,motion_o_mb_default_random4.json
+random,4,none,156,39,videos/14_04_0.mp4,Does the pen move away from the person?,yes,No.,no,0,34 40 54 65,,,motion_o_mb_default_random4.json
+random,4,none,157,39,videos/14_04_1.mp4,Does the pen move away from the person?,no,No.,no,1,46 51 68 74,,,motion_o_mb_default_random4.json
+random,4,none,158,39,videos/14_04_0.mp4,Does the pen move towards the person?,no,No.,no,1,34 40 54 65,,,motion_o_mb_default_random4.json
+random,4,none,159,39,videos/14_04_1.mp4,Does the pen move towards the person?,yes,No,no,0,46 51 68 74,,,motion_o_mb_default_random4.json
+random,4,none,160,40,videos/14_05_0.mp4,"From the camera's point of view, does the pen slide to the right?",yes,No.,no,0,12 40 104 105,,,motion_o_mb_default_random4.json
+random,4,none,161,40,videos/14_05_1.mp4,"From the camera's point of view, does the pen slide to the right?",no,No.,no,1,14 33 58 106,,,motion_o_mb_default_random4.json
+random,4,none,162,40,videos/14_05_0.mp4,"From the camera's point of view, does the pen slide to the left?",no,No.,no,1,12 40 104 105,,,motion_o_mb_default_random4.json
+random,4,none,163,40,videos/14_05_1.mp4,"From the camera's point of view, does the pen slide to the left?",yes,No.,no,0,14 33 58 106,,,motion_o_mb_default_random4.json
+random,4,none,164,41,videos/14_05_0.mp4,Does the pen move away from the edge of the table?,yes,No.,no,0,12 40 104 105,,,motion_o_mb_default_random4.json
+random,4,none,165,41,videos/14_05_1.mp4,Does the pen move away from the edge of the table?,no,No.,no,1,14 33 58 106,,,motion_o_mb_default_random4.json
+random,4,none,166,41,videos/14_05_0.mp4,Does the pen move towards the edge of the table?,no,Yes.,yes,0,12 40 104 105,,,motion_o_mb_default_random4.json
+random,4,none,167,41,videos/14_05_1.mp4,Does the pen move towards the edge of the table?,yes,No.,no,0,14 33 58 106,,,motion_o_mb_default_random4.json
+random,4,none,168,42,videos/14_06_0.mp4,Does the bottle move up?,yes,Yes.,yes,1,15 24 71 99,,,motion_o_mb_default_random4.json
+random,4,none,169,42,videos/14_06_1.mp4,Does the bottle move up?,no,Yes.,yes,0,9 10 63 90,,,motion_o_mb_default_random4.json
+random,4,none,170,42,videos/14_06_0.mp4,Does the bottle move down?,no,Yes.,yes,0,15 24 71 99,,,motion_o_mb_default_random4.json
+random,4,none,171,42,videos/14_06_1.mp4,Does the bottle move down?,yes,Yes.,yes,1,9 10 63 90,,,motion_o_mb_default_random4.json
+random,4,none,172,43,videos/14_07_0.mp4,Does the phone move closer to the camera?,yes,Yes.,yes,1,15 20 108 122,,,motion_o_mb_default_random4.json
+random,4,none,173,43,videos/14_07_1.mp4,Does the phone move closer to the camera?,no,Yes.,yes,0,8 50 63 71,,,motion_o_mb_default_random4.json
+random,4,none,174,43,videos/14_07_0.mp4,Does the phone move away from the camera?,no,No.,no,1,15 20 108 122,,,motion_o_mb_default_random4.json
+random,4,none,175,43,videos/14_07_1.mp4,Does the phone move away from the camera?,yes,No.,no,0,8 50 63 71,,,motion_o_mb_default_random4.json
+random,4,none,176,44,videos/14_08_0.mp4,Does the book move closer to the camera?,yes,No.,no,0,9 24 72 81,,,motion_o_mb_default_random4.json
+random,4,none,177,44,videos/14_08_1.mp4,Does the book move closer to the camera?,no,No.,no,1,49 57 92 119,,,motion_o_mb_default_random4.json
+random,4,none,178,44,videos/14_08_0.mp4,Does the book move away from the camera?,no,No.,no,1,9 24 72 81,,,motion_o_mb_default_random4.json
+random,4,none,179,44,videos/14_08_1.mp4,Does the book move away from the camera?,yes,No.,no,0,49 57 92 119,,,motion_o_mb_default_random4.json
+random,4,none,180,45,videos/14_09_0.mp4,Does the cup move away from the camera?,yes,No.,no,0,28 47 54 65,,,motion_o_mb_default_random4.json
+random,4,none,181,45,videos/14_09_1.mp4,Does the cup move away from the camera?,no,No.,no,1,31 43 74 77,,,motion_o_mb_default_random4.json
+random,4,none,182,45,videos/14_09_0.mp4,Does the cup move closer to the camera?,no,No.,no,1,28 47 54 65,,,motion_o_mb_default_random4.json
+random,4,none,183,45,videos/14_09_1.mp4,Does the cup move closer to the camera?,yes,No.,no,0,31 43 74 77,,,motion_o_mb_default_random4.json
+random,4,none,184,46,videos/14_10_0.mp4,Is the table top moving up?,yes,Yes.,yes,1,62 67 83 97,,,motion_o_mb_default_random4.json
+random,4,none,185,46,videos/14_10_1.mp4,Is the table top moving up?,no,No,no,1,29 102 144 158,,,motion_o_mb_default_random4.json
+random,4,none,186,46,videos/14_10_0.mp4,Is the table top moving down?,no,No,no,1,62 67 83 97,,,motion_o_mb_default_random4.json
+random,4,none,187,46,videos/14_10_1.mp4,Is the table top moving down?,yes,No,no,0,29 102 144 158,,,motion_o_mb_default_random4.json
+random,4,none,188,47,videos/14_10_0.mp4,Does the table top go away from the floor?,yes,No.,no,0,62 67 83 97,,,motion_o_mb_default_random4.json
+random,4,none,189,47,videos/14_10_1.mp4,Does the table top go away from the floor?,no,No,no,1,29 102 144 158,,,motion_o_mb_default_random4.json
+random,4,none,190,47,videos/14_10_0.mp4,Does the table top go towards the floor?,no,No,no,1,62 67 83 97,,,motion_o_mb_default_random4.json
+random,4,none,191,47,videos/14_10_1.mp4,Does the table top go towards the floor?,yes,No,no,0,29 102 144 158,,,motion_o_mb_default_random4.json
+random,4,none,192,48,videos/14_11_0.mp4,Does the toy car move away from the camera?,yes,No.,no,0,24 29 31 35,,,motion_o_mb_default_random4.json
+random,4,none,193,48,videos/14_11_1.mp4,Does the toy car move away from the camera?,no,No.,no,1,26 52 87 99,,,motion_o_mb_default_random4.json
+random,4,none,194,48,videos/14_11_0.mp4,Does the toy car move closer to the camera?,no,No.,no,1,24 29 31 35,,,motion_o_mb_default_random4.json
+random,4,none,195,48,videos/14_11_1.mp4,Does the toy car move closer to the camera?,yes,No.,no,0,26 52 87 99,,,motion_o_mb_default_random4.json
+random,4,none,196,49,videos/14_12_0.mp4,"From the camera's point of view, does the ball roll to the camera's right?",yes,No.,no,0,10 11 12 60,,,motion_o_mb_default_random4.json
+random,4,none,197,49,videos/14_12_1.mp4,"From the camera's point of view, does the ball roll to the camera's right?",no,No.,no,1,18 50 69 77,,,motion_o_mb_default_random4.json
+random,4,none,198,49,videos/14_12_0.mp4,"From the camera's point of view, does the ball roll to the camera's left?",no,No,no,1,10 11 12 60,,,motion_o_mb_default_random4.json
+random,4,none,199,49,videos/14_12_1.mp4,"From the camera's point of view, does the ball roll to the camera's left?",yes,No.,no,0,18 50 69 77,,,motion_o_mb_default_random4.json
+random,4,none,200,50,videos/14_13_0.mp4,Is the cup moving away from the camera?,yes,No.,no,0,14 20 48 58,,,motion_o_mb_default_random4.json
+random,4,none,201,50,videos/14_13_1.mp4,Is the cup moving away from the camera?,no,No.,no,1,11 28 35 37,,,motion_o_mb_default_random4.json
+random,4,none,202,50,videos/14_13_0.mp4,Is the cup getting closer to the camera?,no,No.,no,1,14 20 48 58,,,motion_o_mb_default_random4.json
+random,4,none,203,50,videos/14_13_1.mp4,Is the cup getting closer to the camera?,yes,No.,no,0,11 28 35 37,,,motion_o_mb_default_random4.json
+random,4,none,204,51,videos/14_13_0.mp4,Is the cup moving closer to the sink?,yes,Yes.,yes,1,14 20 48 58,,,motion_o_mb_default_random4.json
+random,4,none,205,51,videos/14_13_1.mp4,Is the cup moving closer to the sink?,no,Yes.,yes,0,11 28 35 37,,,motion_o_mb_default_random4.json
+random,4,none,206,51,videos/14_13_0.mp4,Is the cup getting away from the sink?,no,No.,no,1,14 20 48 58,,,motion_o_mb_default_random4.json
+random,4,none,207,51,videos/14_13_1.mp4,Is the cup getting away from the sink?,yes,No.,no,0,11 28 35 37,,,motion_o_mb_default_random4.json
+random,4,none,208,52,videos/15_00_0.mp4,Is the man bending counter-clock wise?,yes,No.,no,0,22 25 40 45,,,motion_o_mb_default_random4.json
+random,4,none,209,52,videos/15_00_1.mp4,Is the man bending counter-clock wise?,no,No.,no,1,27 43 54 67,,,motion_o_mb_default_random4.json
+random,4,none,210,52,videos/15_00_0.mp4,Is the man bending clock wise?,no,No.,no,1,22 25 40 45,,,motion_o_mb_default_random4.json
+random,4,none,211,52,videos/15_00_1.mp4,Is the man bending clock wise?,yes,No.,no,0,27 43 54 67,,,motion_o_mb_default_random4.json
+random,4,none,212,53,videos/15_00_0.mp4,"From the camera's point of view, does the man move his head to the camera's left?",yes,No.,no,0,22 25 40 45,,,motion_o_mb_default_random4.json
+random,4,none,213,53,videos/15_00_1.mp4,"From the camera's point of view, does the man move his head to the camera's left?",no,No.,no,1,27 43 54 67,,,motion_o_mb_default_random4.json
+random,4,none,214,53,videos/15_00_0.mp4,"From the camera's point of view, does the man move his head to the camera's right?",no,No.,no,1,22 25 40 45,,,motion_o_mb_default_random4.json
+random,4,none,215,53,videos/15_00_1.mp4,"From the camera's point of view, does the man move his head to the camera's right?",yes,No.,no,0,27 43 54 67,,,motion_o_mb_default_random4.json
+random,4,none,216,54,videos/15_01_0.mp4,Is the bottle spun clockwise?,yes,No,no,0,7 22 60 198,,,motion_o_mb_default_random4.json
+random,4,none,217,54,videos/15_01_1.mp4,Is the bottle spun clockwise?,no,No.,no,1,16 44 96 207,,,motion_o_mb_default_random4.json
+random,4,none,218,54,videos/15_01_0.mp4,Is the bottle spun counter-clockwise?,no,No,no,1,7 22 60 198,,,motion_o_mb_default_random4.json
+random,4,none,219,54,videos/15_01_1.mp4,Is the bottle spun counter-clockwise?,yes,No,no,0,16 44 96 207,,,motion_o_mb_default_random4.json
+random,4,none,220,55,videos/15_02_0.mp4,Is the airpods case spun clockwise?,yes,No.,no,0,0 9 22 102,,,motion_o_mb_default_random4.json
+random,4,none,221,55,videos/15_02_1.mp4,Is the airpods case spun clockwise?,no,No.,no,1,9 14 27 60,,,motion_o_mb_default_random4.json
+random,4,none,222,55,videos/15_02_0.mp4,Is the airpods case spun counter-clockwise?,no,No.,no,1,0 9 22 102,,,motion_o_mb_default_random4.json
+random,4,none,223,55,videos/15_02_1.mp4,Is the airpods case spun counter-clockwise?,yes,No.,no,0,9 14 27 60,,,motion_o_mb_default_random4.json
+random,4,none,224,56,videos/15_03_0.mp4,Is the man spinning clockwise?,yes,No.,no,0,27 59 62 70,,,motion_o_mb_default_random4.json
+random,4,none,225,56,videos/15_03_1.mp4,Is the man spinning clockwise?,no,No.,no,1,1 49 72 73,,,motion_o_mb_default_random4.json
+random,4,none,226,56,videos/15_03_0.mp4,Is the man spinning counter-clockwise?,no,No.,no,1,27 59 62 70,,,motion_o_mb_default_random4.json
+random,4,none,227,56,videos/15_03_1.mp4,Is the man spinning counter-clockwise?,yes,No.,no,0,1 49 72 73,,,motion_o_mb_default_random4.json
+random,4,none,228,57,videos/15_04_0.mp4,Does the notebook rotate clockwise?,yes,No,no,0,12 21 90 93,,,motion_o_mb_default_random4.json
+random,4,none,229,57,videos/15_04_1.mp4,Does the notebook rotate clockwise?,no,No,no,1,7 25 29 69,,,motion_o_mb_default_random4.json
+random,4,none,230,57,videos/15_04_0.mp4,Does the notebook rotate counter-clockwise?,no,No,no,1,12 21 90 93,,,motion_o_mb_default_random4.json
+random,4,none,231,57,videos/15_04_1.mp4,Does the notebook rotate counter-clockwise?,yes,No,no,0,7 25 29 69,,,motion_o_mb_default_random4.json
+random,4,none,232,58,videos/15_04_0.mp4,Does the notebook fall to the camera's right?,yes,No,no,0,12 21 90 93,,,motion_o_mb_default_random4.json
+random,4,none,233,58,videos/15_04_1.mp4,Does the notebook fall to the camera's right?,no,No,no,1,7 25 29 69,,,motion_o_mb_default_random4.json
+random,4,none,234,58,videos/15_04_0.mp4,Does the notebook fall to the camera's left?,no,No,no,1,12 21 90 93,,,motion_o_mb_default_random4.json
+random,4,none,235,58,videos/15_04_1.mp4,Does the notebook fall to the camera's left?,yes,No,no,0,7 25 29 69,,,motion_o_mb_default_random4.json
+random,4,none,236,59,videos/15_05_0.mp4,Is the cup spun clockwise?,yes,No.,no,0,1 11 17 67,,,motion_o_mb_default_random4.json
+random,4,none,237,59,videos/15_05_1.mp4,Is the cup spun clockwise?,no,No.,no,1,23 37 49 57,,,motion_o_mb_default_random4.json
+random,4,none,238,59,videos/15_05_0.mp4,Is the cup spun counter-clockwise?,no,No.,no,1,1 11 17 67,,,motion_o_mb_default_random4.json
+random,4,none,239,59,videos/15_05_1.mp4,Is the cup spun counter-clockwise?,yes,No.,no,0,23 37 49 57,,,motion_o_mb_default_random4.json

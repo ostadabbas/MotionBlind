@@ -1,0 +1,10 @@
+model,group,MB_IAcc,MB_Acc,TB_IAcc,TB_Acc,VMME_Acc,n_instances,MB_config,MB_source,TB_source,VMME_config
+Human,human,91.3,97.8,98.2,99.3,87.9,60,,,"cited: paper Table 1 (mean of 5 annotators, range 85-97)",cited: paper Table 1
+Gemini 3.1 Pro,frontier,60.0,80.8,48.2,76.2,78.2,60,uniform-24,results/models/Gemini-3.1-Pro/motionblind/gemini_3_pro_mbhuman_per_question_uniform24.csv,"cited: TimeBlind [12], best of 20+ MLLMs",cited: paper Table 1
+GPT-5.6,frontier,15.0,62.1,46.3,77.3,74.8,60,uniform-8 (Acc random-4),results/models/GPT-5.6-Luna-720x1280/motionblind/gpt_5_6_luna_hires_mbhuman_per_question_uniform8.csv,cited: paper Table 1,cited: paper Table 1
+Eagle2.5-8B,open,11.7,58.8,24.2,66.5,65.4,60,uniform-24 (Acc hornet-16),results/models/Eagle-2.5-8B/motionblind/eagle2_5_8b_mbhuman_per_question_uniform24.csv,hornet-24 [results/models/Eagle-2.5-8B/eagle2_5_8b_timeblind_sweep.csv],uniform-24 [results/models/Eagle-2.5-8B/eagle2_5_8b_videomme_sweep.csv]
+Inkling-Small,open,10.0,57.1,,,,60,uniform-4 (Acc random-32),results/models/Inkling-Small/motionblind/inkling_small_mbhuman_per_question_uniform4.csv,,
+Qwen3-VL-4B,open,8.3,58.3,24.7,65.3,59.7,60,uniform-8 (Acc random-24),results/models/Qwen3-VL-4B/motionblind/qwen3_vl_4b_mbhuman_per_question_uniform8.csv,uniform-24 [results/models/Qwen3-VL-4B/qwen3_vl_4b_timeblind_sweep.csv],uniform-24 [results/models/Qwen3-VL-4B/qwen3_vl_4b_videomme_sweep.csv]
+Motion-o (7B),open,6.7,55.4,16.3,61.0,58.2,60,uniform-24 (Acc random-16),results/models/Motion-o/motionblind/motion_o_mbhuman_per_question_uniform24.csv,uniform-24 [results/models/Motion-o/motion_o_timeblind_sweep.csv],f2c-24 [results/models/Motion-o/motion_o_videomme_sweep.csv]
+Gemma-4-12B-it,open,3.6,52.2,,,70.3,56,,,"cited: paper Table 1 (56-instance subset, not 1:1 comparable)",cited: paper Table 1
+Molmo2-8B,open,3.3,54.2,12.2,59.0,60.9,60,uniform-24 (Acc random-8),results/models/Molmo2-8B/motionblind/molmo2_8b_mbhuman_per_question_uniform24.csv,hornet-24 [results/models/Molmo2-8B/molmo2_8b_timeblind_sweep.csv],uniform-24 [results/models/Molmo2-8B/molmo2_8b_videomme_sweep.csv]

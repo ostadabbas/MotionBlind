@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.2475,
+  "V_Acc": 0.37916666666666665,
+  "Acc": 0.61,
+  "I_Acc": 0.12833333333333333,
+  "F1_yesno_pct": 47.73,
+  "yesno_Acc_pct": 59.67,
+  "yes_rate_pct": 27.17,
+  "confusion": {
+    "TP": 221,
+    "FP": 105,
+    "FN": 379,
+    "TN": 495,
+    "invalid": 0,
+    "n_yesno": 1200
+  },
+  "config": {
+    "model_name": "Motion-o",
+    "sampling": "hornet",
+    "num_frames": 24,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "results/motion_o_timeblind_default_*.json",
+    "dataset": "timeblind"
+  },
+  "_derived": true
+}

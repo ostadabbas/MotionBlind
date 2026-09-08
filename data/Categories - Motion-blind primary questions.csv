@@ -1,0 +1,42 @@
+Instance ID,Question 1,Question 2
+02_00_a,Does the person stir faster the first time compared to the second time?,Does the person stir slower the first time compared to the second time?
+02_01_a,Does the drawer close faster the first time compared to the second time?,Does the drawer close slower the first time compared to the second time?
+02_02_a,Does the person open their hand faster the first time compared to the second time?,Does the person open their hand slower the first time compared to the second time?
+02_03_a,Does the person press the pillow faster the first time compared to the second time?,Does the person press the pillow slower the first time compared to the second time?
+02_04_a,"Once off the ramp, does the ball move faster the first time compared to the second time?","Once off the ramp, does the ball move slower the first time compared to the second time?"
+02_05_a,Does the ball travel faster in the second push compared to the first?,Does the ball travel faster in the first push compared to the second?
+09_00_a,Does the box travel farther in the second push compared to the first?,Does the box travel farther in the first push compared to the second?
+09_01_a,Does the puck travel farther in the second push compared to the first?,Does the puck travel farther in the first push compared to the second?
+09_02_a,Does the toy car travel farther in the second push compared to the first?,Does the toy car travel farther in the first push compared to the second?
+09_03_a,Does the ball travel farther in the second push compared to the first?,Does the ball travel farther in the first push compared to the second?
+09_04_a,Does the ball travel farther in the second push compared to the first?,Does the ball travel farther in the first push compared to the second?
+09_05_a,Does the ball that starts closer to the camera roll further?,Does the ball that starts farther from the camera roll further?
+09_06_a,"From the camera's point of view, does the right disk move further?","From the camera's point of view, does the left disk move further?"
+09_07_a,Is the magnitude of the pendulum arc smaller the first time compared to the second time?,Is the magnitude of the pendulum arc larger the first time compared to the second time?
+09_08_a,Is the drawer pulled out farther the first time compared to the second time?,Is the drawer pulled out less the first time compared to the second time?
+09_09_a,Is the magnitude of the person's arm swing smaller the first time compared to the second time?,Is the magnitude of the person's arm swing larger the first time compared to the second time?
+09_10_a,Is the magnitude of the ball's first bounce smaller the first time compared to the second time?,Is the magnitude of the ball's first bounce larger the first time compared to the second time?
+09_11_a,Does the ball travel farther the second time compared to the first time?,Does the ball travel farther the first time compared to the second time?
+09_12_a,Does the ball travel farther the second time compared to the first time?,Does the ball travel farther the first time compared to the second time?
+09_13_a,Does the person squeeze with more force the first time compared to the second time?,Does the person squeeze with less force the first time compared to the second time?
+09_14_a,Does the cup travel farther the second time compared to the first time?,Does the cup travel farther the first time compared to the second time?
+14_00_a,"From the camera's point of view, is the man walking to the right?","From the camera's point of view, is the man walking to the left?"
+14_01_a,Is the cup moving towards the sink?,Is the cup moving away from the sink?
+14_02_a,Is the man getting closer to the camera?,Is the man moving farther from the camera?
+14_03_a,"From the camera's point of view, is the man moving to the right?","From the camera's point of view, is the man moving to the left?"
+14_04_a,"From the camera's point of view, does the pen roll to the right?","From the camera's point of view, does the pen roll to the left?"
+14_05_a,"From the camera's point of view, does the pen slide to the right?","From the camera's point of view, does the pen slide to the left?"
+14_06_a,Does the bottle move up?,Does the bottle move down?
+14_07_a,Does the phone move closer to the camera?,Does the phone move away from the camera?
+14_08_a,Does the book move closer to the camera?,Does the book move away from the camera?
+14_09_a,Does the cup move away from the camera?,Does the cup move closer to the camera?
+14_10_a,Is the table top moving up?,Is the table top moving down?
+14_11_a,Does the toy car move away from the camera?,Does the toy car move closer to the camera?
+14_12_a,"From the camera's point of view, does the ball roll to the camera's right?","From the camera's point of view, does the ball roll to the camera's left?"
+14_13_a,Is the cup moving away from the camera?,Is the cup getting closer to the camera?
+15_00_a,Is the man bending counter-clock wise?,Is the man bending clock wise?
+15_01_a,Is the bottle spun clockwise?,Is the bottle spun counter-clockwise?
+15_02_a,Is the airpods case spun clockwise?,Is the airpods case spun counter-clockwise?
+15_03_a,Is the man spinning clockwise?,Is the man spinning counter-clockwise?
+15_04_a,Does the notebook rotate clockwise?,Does the notebook rotate counter-clockwise?
+15_05_a,Is the cup spun clockwise?,Is the cup spun counter-clockwise?

@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.058333333333333334,
+  "V_Acc": 0.05,
+  "Acc": 0.5,
+  "I_Acc": 0.0,
+  "F1_yesno_pct": 62.03,
+  "yesno_Acc_pct": 50.0,
+  "yes_rate_pct": 81.67,
+  "confusion": {
+    "TP": 98,
+    "FP": 98,
+    "FN": 22,
+    "TN": 22,
+    "invalid": 0,
+    "n_yesno": 240
+  },
+  "config": {
+    "model_name": "Molmo2-8B",
+    "sampling": "uniform",
+    "num_frames": 1,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "results/Molmo2-8B_motionblindv2_per_question.csv",
+    "dataset": "mbhuman"
+  },
+  "_derived": true
+}

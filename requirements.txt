@@ -1,0 +1,39 @@
+# Python dependencies for the MotionBlind evaluation suite.
+#
+# Install torch and torchvision first with the CUDA build that matches your
+# driver (see the Installation section of the README), then:
+#
+#   pip install -r requirements.txt
+#
+# Scoring (src/eval/lib/scoring.py) and analysis (src/analysis/) use the
+# standard library only. The example script
+# src/eval/examples/evaluate_your_model.py also runs without these packages.
+
+# Open-model drivers: eval_eagle, eval_qwen3, eval_motion, eval_molmo2, eval_gemma4.
+# einops and peft are imported by model remote code at load time.
+numpy<2
+transformers==4.57.1
+accelerate
+qwen-vl-utils
+opencv-python
+einops
+peft
+decord
+pillow
+h5py
+
+# API drivers. These need no GPU and no torch.
+# openai serves eval_openai.py, and Inkling or Luna endpoints via --base-url.
+# google-genai serves eval_gemini.py.
+openai>=1.0
+google-genai>=1.0.0
+tqdm
+
+# Video-MME: dataset preparation (src/eval/lib/prep_videomme.py) and
+# clip streaming during runs (src/eval/lib/hf_video_source.py).
+datasets
+pyarrow
+huggingface_hub
+
+# Learned frame selection (--sampling hornet) uses the cloned HORNet repo
+# through --hornet-repo. It is not a pip package. See the README.

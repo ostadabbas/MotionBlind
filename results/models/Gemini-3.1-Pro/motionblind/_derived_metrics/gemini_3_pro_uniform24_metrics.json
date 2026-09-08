@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.6916666666666667,
+  "V_Acc": 0.7166666666666667,
+  "Acc": 0.8083333333333333,
+  "I_Acc": 0.6,
+  "F1_yesno_pct": 80.99,
+  "yesno_Acc_pct": 80.83,
+  "yes_rate_pct": 50.83,
+  "confusion": {
+    "TP": 98,
+    "FP": 24,
+    "FN": 22,
+    "TN": 96,
+    "invalid": 0,
+    "n_yesno": 240
+  },
+  "config": {
+    "model_name": "Gemini-3.1-Pro",
+    "sampling": "uniform",
+    "num_frames": 24,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "results/Gemini-3.1-Pro_motionblindv2_per_question.csv",
+    "dataset": "mbhuman"
+  },
+  "_derived": true
+}

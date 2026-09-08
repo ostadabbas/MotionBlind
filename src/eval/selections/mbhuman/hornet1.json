@@ -1,0 +1,940 @@
+{
+ "meta": {
+  "sampler": "hornet",
+  "num_frames": 1,
+  "seed": 0,
+  "max_side": 768,
+  "query_conditioned": false,
+  "encoder": null,
+  "hornet_load": "full",
+  "hornet_pool": 32,
+  "hornet_ckpt": "/scratch/bhatia.dh/timeblind/HORNet_ckpt/checkpoints/short/checkpoint-0.550.pt",
+  "hornet_ckpt_variant": "short",
+  "hornet_loader": "lmms_eval_utils.hornet.VisionGRPOPolicy",
+  "n_items": 240,
+  "frames_sent": {
+   "mean": 1.0,
+   "min": 1,
+   "max": 1
+  },
+  "tokens": {
+   "low": {
+    "total": 55408,
+    "mean": 230.9,
+    "usd": 0.0111
+   },
+   "high": {
+    "total": 111168,
+    "mean": 463.2,
+    "usd": 0.0222
+   }
+  },
+  "elapsed_s": 26.5,
+  "keep_prob_std_mean": 4.303e-05,
+  "keep_prob_std_max": 0.00109436
+ },
+ "items": {
+  "videos/02_00_0.mp4": {
+   "indices": [
+    0
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/02_00_1.mp4": {
+   "indices": [
+    220
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/02_01_0.mp4": {
+   "indices": [
+    132
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/02_01_1.mp4": {
+   "indices": [
+    66
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/02_02_0.mp4": {
+   "indices": [
+    90
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/02_02_1.mp4": {
+   "indices": [
+    60
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/02_03_0.mp4": {
+   "indices": [
+    32
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/02_03_1.mp4": {
+   "indices": [
+    123
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/02_04_0.mp4": {
+   "indices": [
+    0
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/02_04_1.mp4": {
+   "indices": [
+    37
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/02_05_0.mp4": {
+   "indices": [
+    46
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/02_05_1.mp4": {
+   "indices": [
+    163
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/09_00_0.mp4": {
+   "indices": [
+    101
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/09_00_1.mp4": {
+   "indices": [
+    35
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/09_01_0.mp4": {
+   "indices": [
+    7
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/09_01_1.mp4": {
+   "indices": [
+    81
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/09_02_0.mp4": {
+   "indices": [
+    17
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/09_02_1.mp4": {
+   "indices": [
+    81
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/09_03_0.mp4": {
+   "indices": [
+    15
+   ],
+   "sizes": [
+    [
+     768,
+     768
+    ]
+   ]
+  },
+  "videos/09_03_1.mp4": {
+   "indices": [
+    119
+   ],
+   "sizes": [
+    [
+     768,
+     768
+    ]
+   ]
+  },
+  "videos/09_04_0.mp4": {
+   "indices": [
+    319
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/09_04_1.mp4": {
+   "indices": [
+    45
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/09_05_0.mp4": {
+   "indices": [
+    18
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/09_05_1.mp4": {
+   "indices": [
+    90
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/09_06_0.mp4": {
+   "indices": [
+    136
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/09_06_1.mp4": {
+   "indices": [
+    67
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/09_07_0.mp4": {
+   "indices": [
+    58
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/09_07_1.mp4": {
+   "indices": [
+    455
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/09_08_0.mp4": {
+   "indices": [
+    64
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/09_08_1.mp4": {
+   "indices": [
+    194
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/09_09_0.mp4": {
+   "indices": [
+    101
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/09_09_1.mp4": {
+   "indices": [
+    7
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/09_10_0.mp4": {
+   "indices": [
+    126
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/09_10_1.mp4": {
+   "indices": [
+    42
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/09_11_0.mp4": {
+   "indices": [
+    250
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/09_11_1.mp4": {
+   "indices": [
+    70
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/09_12_0.mp4": {
+   "indices": [
+    14
+   ],
+   "sizes": [
+    [
+     768,
+     768
+    ]
+   ]
+  },
+  "videos/09_12_1.mp4": {
+   "indices": [
+    256
+   ],
+   "sizes": [
+    [
+     768,
+     768
+    ]
+   ]
+  },
+  "videos/09_13_0.mp4": {
+   "indices": [
+    301
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/09_13_1.mp4": {
+   "indices": [
+    161
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/09_14_0.mp4": {
+   "indices": [
+    68
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/09_14_1.mp4": {
+   "indices": [
+    170
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/14_00_0.mp4": {
+   "indices": [
+    0
+   ],
+   "sizes": [
+    [
+     768,
+     432
+    ]
+   ]
+  },
+  "videos/14_00_1.mp4": {
+   "indices": [
+    28
+   ],
+   "sizes": [
+    [
+     768,
+     432
+    ]
+   ]
+  },
+  "videos/14_01_0.mp4": {
+   "indices": [
+    30
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/14_01_1.mp4": {
+   "indices": [
+    47
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/14_02_0.mp4": {
+   "indices": [
+    93
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_02_1.mp4": {
+   "indices": [
+    3
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_03_0.mp4": {
+   "indices": [
+    19
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_03_1.mp4": {
+   "indices": [
+    0
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_04_0.mp4": {
+   "indices": [
+    59
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_04_1.mp4": {
+   "indices": [
+    26
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_05_0.mp4": {
+   "indices": [
+    3
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_05_1.mp4": {
+   "indices": [
+    34
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_06_0.mp4": {
+   "indices": [
+    29
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_06_1.mp4": {
+   "indices": [
+    49
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_07_0.mp4": {
+   "indices": [
+    68
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_07_1.mp4": {
+   "indices": [
+    43
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_08_0.mp4": {
+   "indices": [
+    20
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_08_1.mp4": {
+   "indices": [
+    77
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_09_0.mp4": {
+   "indices": [
+    13
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/14_09_1.mp4": {
+   "indices": [
+    66
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/14_10_0.mp4": {
+   "indices": [
+    88
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/14_10_1.mp4": {
+   "indices": [
+    164
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/14_11_0.mp4": {
+   "indices": [
+    9
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/14_11_1.mp4": {
+   "indices": [
+    112
+   ],
+   "sizes": [
+    [
+     768,
+     434
+    ]
+   ]
+  },
+  "videos/14_12_0.mp4": {
+   "indices": [
+    27
+   ],
+   "sizes": [
+    [
+     768,
+     432
+    ]
+   ]
+  },
+  "videos/14_12_1.mp4": {
+   "indices": [
+    5
+   ],
+   "sizes": [
+    [
+     768,
+     432
+    ]
+   ]
+  },
+  "videos/14_13_0.mp4": {
+   "indices": [
+    3
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/14_13_1.mp4": {
+   "indices": [
+    5
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/15_00_0.mp4": {
+   "indices": [
+    34
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/15_00_1.mp4": {
+   "indices": [
+    42
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/15_01_0.mp4": {
+   "indices": [
+    39
+   ],
+   "sizes": [
+    [
+     768,
+     432
+    ]
+   ]
+  },
+  "videos/15_01_1.mp4": {
+   "indices": [
+    208
+   ],
+   "sizes": [
+    [
+     768,
+     432
+    ]
+   ]
+  },
+  "videos/15_02_0.mp4": {
+   "indices": [
+    48
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/15_02_1.mp4": {
+   "indices": [
+    22
+   ],
+   "sizes": [
+    [
+     432,
+     768
+    ]
+   ]
+  },
+  "videos/15_03_0.mp4": {
+   "indices": [
+    17
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/15_03_1.mp4": {
+   "indices": [
+    11
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/15_04_0.mp4": {
+   "indices": [
+    57
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/15_04_1.mp4": {
+   "indices": [
+    2
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/15_05_0.mp4": {
+   "indices": [
+    13
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  },
+  "videos/15_05_1.mp4": {
+   "indices": [
+    59
+   ],
+   "sizes": [
+    [
+     434,
+     768
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<!--
+  MotionBlind human study. Questions load from data.jsonl at runtime, so serve
+  this folder over HTTP; a file:// open cannot fetch it. Answers stay on this
+  machine.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MotionBlind study</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark:#1a1a2e; --gold:#f59e0b; --accent:#ff6b35; --green:#10b981; --red:#ef4444;
+    --slate:#64748b; --line:#e2e8f0; --ink:#1f2937;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fff; color:var(--ink);
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size:15px; line-height:1.55; -webkit-font-smoothing:antialiased; }
+
+  header { background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
+    padding:1rem 1.5rem; display:flex; align-items:center; gap:16px; }
+  header .title { color:#fff; font-weight:700; letter-spacing:.2px; }
+  header .title .hl { background:linear-gradient(90deg,var(--gold),var(--accent));
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+  header .spacer { flex:1; }
+  header .who { color:#cbd5e1; font-size:.85rem; }
+  header .btn-link { color:#93c5fd; }
+
+  .wrap { max-width:880px; margin:0 auto; padding:2rem 1.5rem 4rem; }
+  h1 { font-size:1.75rem; font-weight:700; color:var(--dark); margin:0 0 .4rem; }
+  p.lead { color:var(--slate); margin:0 0 1.5rem; }
+  ul { color:var(--slate); padding-left:1.25rem; margin:0; }
+  li { margin:.5rem 0; }
+  li b { color:var(--ink); font-weight:600; }
+
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px;
+    box-shadow:0 8px 30px rgba(0,0,0,.06); padding:1.75rem; }
+
+  .bar { height:6px; background:var(--line); border-radius:3px; overflow:hidden; }
+  .bar > i { display:block; height:100%; width:0; border-radius:3px;
+    background:linear-gradient(90deg,var(--gold),var(--accent)); transition:width .25s; }
+  .counter { color:var(--slate); font-size:.82rem; margin:.6rem 0 1.25rem;
+    display:flex; gap:1rem; text-transform:uppercase; letter-spacing:.5px; font-weight:600; }
+
+  /* fixed box so the buttons never shift between clips of different sizes */
+  video { cursor:pointer; width:100%; height:52vh; min-height:240px; background:#0b0d13; object-fit:contain;
+    border-radius:12px; display:block; }
+
+  .q { font-size:1.35rem; font-weight:600; line-height:1.4; color:var(--dark); margin:1.25rem 0 0; }
+
+  .answers { display:flex; gap:.75rem; margin-top:1.25rem; flex-wrap:wrap; }
+  button { font:inherit; font-weight:600; color:var(--ink); background:#fff;
+    border:1px solid var(--line); border-radius:10px; padding:.8rem 1.25rem; cursor:pointer;
+    transition:transform .15s, box-shadow .15s, filter .15s; }
+  button:hover:not(:disabled) { transform:translateY(-1px); box-shadow:0 4px 14px rgba(0,0,0,.1); }
+  button:disabled { opacity:.4; cursor:not-allowed; }
+  button .k { font-size:.72rem; margin-left:.5rem; opacity:.75; font-weight:500; }
+  .btn-yes, .btn-no { flex:1; min-width:150px; color:#fff; }
+  .btn-yes { background:var(--green); border-color:var(--green); }
+  .btn-no { background:var(--red); border-color:var(--red); }
+  .btn-unsure { background:#f1f5f9; border-color:var(--line); color:var(--slate); }
+  .btn-primary { background:var(--gold); border-color:var(--gold); color:var(--dark); }
+  .btn-ghost { background:#fff; }
+  .btn-link { background:none; border:none; color:var(--slate); padding:.35rem .5rem;
+    font-size:.82rem; font-weight:500; text-decoration:underline; }
+  .btn-link:hover { transform:none; box-shadow:none; }
+
+  .row { display:flex; gap:.75rem; align-items:center; margin-top:1rem; flex-wrap:wrap; }
+  input[type=text] { font:inherit; color:var(--ink); background:#fff; border:1px solid var(--line);
+    border-radius:10px; padding:.75rem .9rem; width:100%; max-width:320px; }
+  input[type=text]:focus { outline:none; border-color:var(--gold); }
+  .hint { color:var(--slate); font-size:.85rem; margin-top:.6rem; }
+  .warn { color:#b45309; font-size:.85rem; margin-top:.6rem; }
+  .hidden { display:none !important; }
+
+  .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:1.25rem; margin:0 0 1.5rem; }
+  .stat { background:#fff; border:1px solid var(--line); border-radius:12px; padding:1.25rem;
+    text-align:center; border-top:4px solid var(--gold); }
+  .stat .n { font-size:2rem; font-weight:800; color:var(--dark); line-height:1; }
+  .stat .l { font-size:.78rem; color:var(--slate); margin-top:.4rem;
+    text-transform:uppercase; letter-spacing:.5px; }
+</style>
+</head>
+<body>
+
+<header>
+  <span class="title">MotionBlind <span class="hl">study</span></span>
+  <span class="spacer"></span>
+  <span class="who" id="who"></span>
+  <button class="btn-link hidden" id="saveNow">Save progress</button>
+</header>
+
+<div class="wrap">
+
+  <section id="s-load">
+    <h1>Loading the study</h1>
+    <div class="card">
+      <p class="lead" id="loadMsg">Reading <b>data.jsonl</b>&hellip;</p>
+      <div class="row hidden" id="pickRow">
+        <input type="file" id="pick" accept=".jsonl,.json,application/json,text/plain">
+      </div>
+      <div class="hint" id="loadHint"></div>
+    </div>
+  </section>
+
+  <section id="s-start" class="hidden">
+    <h1>Before you start</h1>
+    <p class="lead">Short silent clips, one yes or no question each. Everything stays on this laptop.</p>
+    <p class="hint" id="nItems"></p>
+    <div class="card">
+      <ul>
+        <li>Watch the <b>whole clip</b>, then answer the question about <b>that clip only</b>.</li>
+        <li><b>Click the clip</b> to pause or resume it; click once it has finished to replay.
+            Replay as often as you like. <b>R</b> replays, <b>Y</b> is yes, <b>N</b> is no.</li>
+        <li>Some clips look very similar to each other. That is on purpose. <b>Judge each one on its own.</b></li>
+        <li>The clips are <b>silent</b>, because the models we compare against only see the frames.</li>
+        <li>You can go <b>back</b> over anything you have already answered to check it, and
+            <b>next</b> forward again without re-answering. Arrow keys work too.</li>
+        <li>Your progress is saved after every answer, so you can close the tab and come back.</li>
+      </ul>
+      <div class="row" style="margin-top:1.5rem">
+        <input type="text" id="annot" placeholder="Your name or initials" autocomplete="off" spellcheck="false">
+        <button class="btn-primary" id="begin">Start</button>
+      </div>
+      <div class="hint" id="startHint">Use the same name if you come back later; that is how your progress is restored.</div>
+    </div>
+  </section>
+
+  <section id="s-resume" class="hidden">
+    <h1>Welcome back</h1>
+    <div class="card">
+      <p class="lead" id="resumeMsg"></p>
+      <div class="row">
+        <button class="btn-primary" id="doResume">Resume</button>
+        <button class="btn-ghost" id="doRestart">Start over</button>
+      </div>
+      <div class="warn">"Start over" erases the answers saved under this name.</div>
+    </div>
+  </section>
+
+  <section id="s-task" class="hidden">
+    <div class="bar"><i id="barFill"></i></div>
+    <div class="counter"><span id="cnt"></span><span id="done"></span></div>
+    <div class="card">
+      <video id="vid" playsinline muted preload="auto"></video>
+      <div class="row" style="margin-top:.9rem">
+        <button id="replay">Replay<span class="k">R</span></button>
+        <span class="hint" id="vnote" style="margin:0"></span>
+      </div>
+      <div class="q" id="question"></div>
+      <div class="answers">
+        <button class="btn-yes" id="bYes" disabled>Yes<span class="k">Y</span></button>
+        <button class="btn-no" id="bNo" disabled>No<span class="k">N</span></button>
+        <button class="btn-unsure" id="bUnsure" disabled>Not sure<span class="k">U</span></button>
+      </div>
+      <div class="row">
+        <button class="btn-link" id="back">&larr; previous item</button>
+        <button class="btn-link hidden" id="fwd">next item &rarr;</button>
+        <button class="btn-link hidden" id="resume">back to where I left off</button>
+        <span class="hint" id="prevAns" style="margin:0"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="s-done" class="hidden">
+    <h1>All done, thank you</h1>
+    <div class="card">
+      <div class="stats">
+        <div class="stat"><div class="n" id="dAns">0</div><div class="l">answered</div></div>
+        <div class="stat"><div class="n" id="dUns">0</div><div class="l">not sure</div></div>
+        <div class="stat"><div class="n" id="dTime">0m</div><div class="l">total time</div></div>
+      </div>
+      <button class="btn-primary" id="download">Download results</button>
+      <div class="hint">Then mail the downloaded file back.</div>
+      <div class="row"><button class="btn-link" id="reviewBack">Go back and review the last item</button></div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+
+(function () {
+  "use strict";
+
+  // 0 = use every instance. Set e.g. 20 to ship a shorter study (56 total).
+  var LIMIT_INSTANCES = 0;
+
+  // ======================= DATA =======================
+  // Questions are read at runtime from data.jsonl, the MotionBlind file itself,
+  // so there is only ever one copy of the questions to keep in step. The ground
+  // truth `answer` field is dropped on parse and never reaches the page state
+  // or the exported results.
+  var DATA_URL = "data.jsonl";
+
+  function parseJSONL(text) {
+    var out = [], lines = text.split(/\r?\n/);
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i].trim();
+      if (!line) continue;
+      var row;
+      try { row = JSON.parse(line); }
+      catch (e) { throw new Error("line " + (i + 1) + " of the data file is not valid JSON"); }
+      if (typeof row.index !== "number" || !row.video_path || !row.question) {
+        throw new Error("line " + (i + 1) + " is missing index, video_path or question");
+      }
+      out.push({                       // note: `answer` deliberately not copied
+        index: row.index,
+        video_path: row.video_path,
+        question: row.question,
+        type: row.type || "yes_no"
+      });
+    }
+    if (!out.length) throw new Error("the data file is empty");
+    return out;
+  }
+  // ====================================================
+
+  var $ = function (id) { return document.getElementById(id); };
+  var show = function (id) {
+    ["s-load", "s-start", "s-resume", "s-task", "s-done"].forEach(function (s) {
+      $(s).classList.toggle("hidden", s !== id);
+    });
+  };
+
+  var byInstance = {}, instances = [], BY_INDEX = {};
+
+  // --- pick the items ------------------------------------------------------
+  // The benchmark is 2x2: four items per instance, keyed by index // 4. Keep
+  // whole instances, otherwise the instance-level score is undefined.
+  function loadTasks(tasks, advance) {
+    byInstance = {}; BY_INDEX = {};
+    tasks.forEach(function (t) {
+      var k = Math.floor(t.index / 4);
+      (byInstance[k] = byInstance[k] || []).push(t);
+    });
+    instances = Object.keys(byInstance).filter(function (k) { return byInstance[k].length === 4; });
+    var urlN = parseInt((location.search.match(/[?&]n=(\d+)/) || [])[1], 10);
+    var limit = urlN || LIMIT_INSTANCES;
+    if (limit > 0) instances = instances.slice(0, limit);
+    if (!instances.length) {
+      offerPicker(new Error("no complete instances in the data: each index // 4 group needs 4 items"));
+      return;
+    }
+    instances.forEach(function (k) {
+      byInstance[k].forEach(function (t) { BY_INDEX[t.index] = t; });
+    });
+    $("nItems").textContent = Object.keys(BY_INDEX).length + " items (" + instances.length + " instances)";
+    if (advance !== false) show("s-start");
+  }
+
+  // --- get the data in -----------------------------------------------------
+  // fetch() is blocked on file:// URLs by every current browser, so opening
+  // this file by double-clicking it cannot read data.jsonl. That is not
+  // recoverable in script, so we say so plainly and offer a file picker, which
+  // does work from file:// because the user chose the file themselves.
+  function bootstrap() {
+    show("s-load");
+    fetch(DATA_URL, { cache: "no-store" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status + " for " + DATA_URL);
+        return r.text();
+      })
+      .then(function (text) { loadTasks(parseJSONL(text)); })
+      .catch(function (err) { offerPicker(err); });
+  }
+
+  function offerPicker(err) {
+    show("s-load");
+    var local = location.protocol === "file:";
+    $("loadMsg").innerHTML = local
+      ? "This page cannot read <b>data.jsonl</b> when it is opened directly from disk."
+      : "Could not load <b>data.jsonl</b>: " + String(err.message || err);
+    $("pickRow").classList.remove("hidden");
+    $("loadHint").innerHTML = local
+      ? "Either pick <b>data.jsonl</b> below, or serve the folder instead: " +
+        "<code>python3 -m http.server</code> in this folder, then open " +
+        "<code>http://localhost:8000/index.html</code>."
+      : "Pick <b>data.jsonl</b> manually to carry on.";
+  }
+
+  $("pick").addEventListener("change", function () {
+    var f = this.files && this.files[0];
+    if (!f) return;
+    var fr = new FileReader();
+    fr.onload = function () {
+      try { loadTasks(parseJSONL(String(fr.result))); }
+      catch (e) { $("loadHint").textContent = "That file did not parse: " + e.message; }
+    };
+    fr.onerror = function () { $("loadHint").textContent = "Could not read that file."; };
+    fr.readAsText(f);
+  });
+
+  bootstrap();
+
+  // --- ordering ------------------------------------------------------------
+  // Random order, seeded from the labeller's name. Two consequences worth
+  // knowing: the same name always reproduces the same sequence, so a person can
+  // clear their browser storage and still resume the run they were on; and two
+  // people get different sequences, so any order effect averages out instead of
+  // biasing everyone the same way.
+  //
+  // The shuffle is over ALL items, so the 2x2 members of an instance are no
+  // longer adjacent. That is deliberate: seeing both versions of a clip back to
+  // back lets a labeller compare them directly and inflates the human ceiling.
+  // Scoring is unaffected, it regroups by index % 4.
+  function hashName(s) {
+    var h = 2166136261 >>> 0;                 // FNV-1a
+    for (var i = 0; i < s.length; i++) {
+      h ^= s.charCodeAt(i);
+      h = Math.imul(h, 16777619) >>> 0;
+    }
+    return h >>> 0;
+  }
+
+  function mulberry32(a) {                     // small seeded PRNG
+    return function () {
+      a |= 0; a = (a + 0x6D2B79F5) | 0;
+      var t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+
+  function orderFor(name) {
+    var ids = Object.keys(BY_INDEX).map(Number).sort(function (a, b) { return a - b; });
+    var rnd = mulberry32(hashName(String(name || "").trim().toLowerCase()));
+    for (var i = ids.length - 1; i > 0; i--) {   // Fisher-Yates
+      var j = Math.floor(rnd() * (i + 1));
+      var t = ids[i]; ids[i] = ids[j]; ids[j] = t;
+    }
+    return ids;
+  }
+
+  // --- state ---------------------------------------------------------------
+  var S = { name: "", order: [], pos: 0, answers: {}, started: null };
+  var shownAt = 0, watched = false, badVideo = false;
+  var key = function (n) { return "vqa:" + n.toLowerCase(); };
+
+  function save() {
+    try { localStorage.setItem(key(S.name), JSON.stringify(S)); } catch (e) {}
+  }
+  function nAnswered() { return Object.keys(S.answers).length; }
+  function firstUnansweredPos() {
+    for (var i = 0; i < S.order.length; i++) if (!S.answers[S.order[i]]) return i;
+    return -1;                        // everything answered
+  }
+
+  function render() {
+    if (S.pos >= S.order.length) return finish();
+    show("s-task");
+    var t = BY_INDEX[S.order[S.pos]];
+    $("barFill").style.width = (100 * S.pos / S.order.length).toFixed(1) + "%";
+    $("cnt").textContent = "Item " + (S.pos + 1) + " of " + S.order.length;
+    $("done").textContent = nAnswered() + " answered";
+    $("question").textContent = t.question;
+
+    var prev = S.answers[t.index];
+    $("prevAns").textContent = prev ? "you answered " + prev.answer + ", answering again replaces it" : "";
+    $("back").classList.toggle("hidden", S.pos === 0);
+
+    // Reviewing something already answered: allow moving on without re-answering,
+    // and offer a jump back to the first item still open.
+    var open = firstUnansweredPos();
+    $("fwd").classList.toggle("hidden", !prev || S.pos >= S.order.length - 1);
+    $("resume").classList.toggle("hidden", !prev || open < 0 || open <= S.pos);
+
+    badVideo = false;
+    watched = !!prev;                    // they already watched it once; do not lock them out
+    enable(watched);
+    $("vnote").textContent = watched
+      ? "already answered, you can change it or move on"
+      : "watch the clip through once to unlock the answers";
+
+    var v = $("vid");
+    v.src = encodeURI(t.video_path);
+    v.load();
+    playFresh();                              // plays at once, unlocks if autoplay is blocked
+    shownAt = Date.now();
+  }
+
+  // Start or restart the clip.
+  //
+  // The original was `v.currentTime = 0; v.play();` and broke on some clips:
+  // play() returns a promise that rejects with AbortError while a seek is still
+  // in flight, and nothing caught it, so the button silently did nothing.
+  //
+  // Note the asymmetry. On a fresh item we call play() straight away, exactly as
+  // before -- deferring it to loadedmetadata delays or suppresses autoplay. Only
+  // the replay path needs the seek, and only that path waits for metadata.
+  function attachOnce(v, ev, fn) {          // no stale listeners from a dead clip
+    if (v._pending) { v.removeEventListener(v._pending.ev, v._pending.fn); }
+    v._pending = { ev: ev, fn: fn };
+    v.addEventListener(ev, function h(e) {
+      v.removeEventListener(ev, h); v._pending = null; fn(e);
+    });
+  }
+
+  function playSafely(v, unlockOnFail) {
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {
+      if (unlockOnFail) {                   // autoplay blocked, do not trap them
+        watched = true; enable(true);
+        $("vnote").textContent = "click Replay to play the clip";
+      } else {
+        $("vnote").textContent = "click Replay again if the clip did not restart";
+      }
+    });
+  }
+
+  function playFresh() {                    // new item: play immediately
+    playSafely($("vid"), true);
+  }
+
+  function replayFromStart() {              // seek to 0 first, once it is safe
+    var v = $("vid");
+    function go() {
+      try { v.currentTime = 0; } catch (e) {}
+      var p = v.play();
+      if (p && p.catch) p.catch(function () {
+        attachOnce(v, "canplay", function () { playSafely(v, false); });
+      });
+    }
+    if (v.readyState >= 1) go();            // HAVE_METADATA, safe to seek
+    else attachOnce(v, "loadedmetadata", go);
+  }
+
+  function enable(on) { $("bYes").disabled = $("bNo").disabled = $("bUnsure").disabled = !on; }
+
+  function onWatched() {
+    if (watched) return;
+    watched = true; enable(true); $("vnote").textContent = "";
+  }
+
+  function record(answer) {
+    var t = BY_INDEX[S.order[S.pos]];
+    S.answers[t.index] = {
+      index: t.index,
+      video_path: t.video_path,
+      question: t.question,
+      answer: answer,                                  // yes | no | unsure
+      model_output: answer === "unsure" ? "" : (answer === "yes" ? "Yes" : "No"),
+      seconds: +((Date.now() - shownAt) / 1000).toFixed(1),
+      video_error: badVideo,
+      ts: new Date().toISOString()
+    };
+    S.pos++;            // advance before saving, or a resume replays this item
+    save();
+    render();
+  }
+
+  function download(partial) {
+    var list = S.order.map(function (i) { return S.answers[i]; }).filter(Boolean);
+    var data = {
+      annotator: S.name, started: S.started, exported: new Date().toISOString(),
+      n_items: S.order.length, n_answered: list.length, partial: !!partial,
+      answers: list
+    };
+    var safe = S.name.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "") || "anon";
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: "application/json" }));
+    a.download = "answers_" + safe + (partial ? "_partial" : "") + ".json";
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  }
+
+  function finish() {
+    show("s-done");
+    var secs = 0, uns = 0, n = 0;
+    Object.keys(S.answers).forEach(function (k) {
+      var r = S.answers[k]; secs += r.seconds || 0; n++;
+      if (r.answer === "unsure") uns++;
+    });
+    $("dAns").textContent = n + " / " + S.order.length;
+    $("dUns").textContent = uns;
+    $("dTime").textContent = Math.round(secs / 60) + "m";
+    $("vid").pause();
+    save();
+  }
+
+  function start(name, resumed) {
+    S.name = name;
+    if (!resumed) {
+      S.order = orderFor(name); S.pos = 0; S.answers = {};
+      S.started = new Date().toISOString();
+    }
+    $("who").textContent = name;
+    $("saveNow").classList.remove("hidden");
+    save();
+    render();
+  }
+
+  // --- wiring --------------------------------------------------------------
+  $("begin").addEventListener("click", function () {
+    var name = $("annot").value.trim();
+    if (!name) { $("startHint").textContent = "Please enter a name first."; return; }
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem(key(name))); } catch (e) {}
+    var done = saved && saved.answers ? Object.keys(saved.answers).length : 0;
+    if (saved && saved.order && saved.order.length && done > 0) {
+      $("resumeMsg").textContent = "We found " + done + " of " + saved.order.length +
+        " items already answered under \"" + name + "\".";
+      $("doResume").onclick = function () { S = saved; start(name, true); };
+      $("doRestart").onclick = function () {
+        try { localStorage.removeItem(key(name)); } catch (e) {}
+        start(name, false);
+      };
+      show("s-resume");
+      return;
+    }
+    start(name, false);
+  });
+  $("annot").addEventListener("keydown", function (e) { if (e.key === "Enter") $("begin").click(); });
+
+  $("bYes").addEventListener("click", function () { record("yes"); });
+  $("bNo").addEventListener("click", function () { record("no"); });
+  $("bUnsure").addEventListener("click", function () { record("unsure"); });
+  $("replay").addEventListener("click", function () {
+    replayFromStart();
+  });
+  $("back").addEventListener("click", function () { if (S.pos > 0) { S.pos--; render(); } });
+  $("fwd").addEventListener("click", function () {
+    if (S.pos < S.order.length - 1) { S.pos++; render(); }
+  });
+  $("resume").addEventListener("click", function () {
+    var i = firstUnansweredPos();
+    if (i >= 0) { S.pos = i; render(); }
+  });
+  $("reviewBack").addEventListener("click", function () {
+    S.pos = Math.max(0, S.order.length - 1); render();
+  });
+  $("download").addEventListener("click", function () { download(false); });
+  $("saveNow").addEventListener("click", function () { download(true); });
+
+  var v = $("vid");
+  // Click the video to pause / resume, or to replay once it has ended. The
+  // Replay button still works; this is the same thing without aiming for it.
+  v.addEventListener("click", function () {
+    if (v.ended) { replayFromStart(); }
+    else if (v.paused) { playSafely(v, false); }
+    else { v.pause(); }
+  });
+  v.addEventListener("ended", onWatched);
+  v.addEventListener("timeupdate", function () {
+    if (v.duration && v.currentTime >= v.duration - 0.15) onWatched();
+  });
+  v.addEventListener("volumechange", function () { v.muted = true; });  // frames only, same as the models
+  v.addEventListener("error", function () {
+    badVideo = true; watched = true; enable(true);
+    $("vnote").textContent = "this clip failed to load, answer 'Not sure' and carry on";
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if ($("s-task").classList.contains("hidden") || e.target.tagName === "INPUT") return;
+    var k = e.key.toLowerCase();
+    if (k === "y" && !$("bYes").disabled) record("yes");
+    else if (k === "n" && !$("bNo").disabled) record("no");
+    else if (k === "u" && !$("bUnsure").disabled) record("unsure");
+    else if (k === "r") $("replay").click();
+    else if (e.key === "ArrowLeft") $("back").click();
+    else if (e.key === "ArrowRight" && !$("fwd").classList.contains("hidden")) $("fwd").click();
+    else return;
+    e.preventDefault();
+  });
+
+  window.addEventListener("beforeunload", function (e) {
+    if (S.name && nAnswered() > 0 && nAnswered() < S.order.length) { e.preventDefault(); e.returnValue = ""; }
+  });
+})();
+
+</script>
+</body>
+</html>

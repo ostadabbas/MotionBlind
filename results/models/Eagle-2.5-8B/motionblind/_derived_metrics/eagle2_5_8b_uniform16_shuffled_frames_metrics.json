@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.075,
+  "V_Acc": 0.21666666666666667,
+  "Acc": 0.5125,
+  "I_Acc": 0.0,
+  "F1_yesno_pct": 57.45,
+  "yesno_Acc_pct": 51.25,
+  "yes_rate_pct": 64.58,
+  "confusion": {
+    "TP": 79,
+    "FP": 76,
+    "FN": 41,
+    "TN": 44,
+    "invalid": 0,
+    "n_yesno": 240
+  },
+  "config": {
+    "model_name": "Eagle-2.5-8B",
+    "sampling": "uniform",
+    "num_frames": 16,
+    "ablation": "shuffled_frames",
+    "prompt_template": "default",
+    "source": "mbabl/raw/eagle2_5_8b_mb_default_*.json",
+    "dataset": "mbhuman"
+  },
+  "_derived": true
+}

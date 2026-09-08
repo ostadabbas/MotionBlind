@@ -1,0 +1,115 @@
+{
+  "Acc": 0.5366666666666666,
+  "Acc_pct": 53.666666666666664,
+  "Acc_ci95": [
+    51.78185378580715,
+    55.541060396739624
+  ],
+  "n": 2700,
+  "correct": 1449,
+  "invalid": 232,
+  "chance_pct": 25.0,
+  "majority_baseline_pct": 27.22222222222222,
+  "majority_letter": "B",
+  "gt_distribution": {
+    "A": 677,
+    "B": 735,
+    "C": 684,
+    "D": 604
+  },
+  "choice_distribution": {
+    "A": 573,
+    "B": 713,
+    "C": 682,
+    "D": 500
+  },
+  "by_duration": {
+    "long": {
+      "Acc_pct": 43.111111111111114,
+      "correct": 388,
+      "n": 900
+    },
+    "medium": {
+      "Acc_pct": 52.0,
+      "correct": 468,
+      "n": 900
+    },
+    "short": {
+      "Acc_pct": 65.88888888888889,
+      "correct": 593,
+      "n": 900
+    }
+  },
+  "by_task_type": {
+    "Action Reasoning": {
+      "Acc_pct": 52.280701754385966,
+      "correct": 149,
+      "n": 285
+    },
+    "Action Recognition": {
+      "Acc_pct": 54.31309904153355,
+      "correct": 170,
+      "n": 313
+    },
+    "Attribute Perception": {
+      "Acc_pct": 68.46846846846847,
+      "correct": 152,
+      "n": 222
+    },
+    "Counting Problem": {
+      "Acc_pct": 29.850746268656717,
+      "correct": 80,
+      "n": 268
+    },
+    "Information Synopsis": {
+      "Acc_pct": 66.25386996904025,
+      "correct": 214,
+      "n": 323
+    },
+    "OCR Problems": {
+      "Acc_pct": 56.83453237410072,
+      "correct": 79,
+      "n": 139
+    },
+    "Object Reasoning": {
+      "Acc_pct": 51.10132158590309,
+      "correct": 232,
+      "n": 454
+    },
+    "Object Recognition": {
+      "Acc_pct": 61.29943502824859,
+      "correct": 217,
+      "n": 354
+    },
+    "Spatial Perception": {
+      "Acc_pct": 62.96296296296296,
+      "correct": 34,
+      "n": 54
+    },
+    "Spatial Reasoning": {
+      "Acc_pct": 75.0,
+      "correct": 42,
+      "n": 56
+    },
+    "Temporal Perception": {
+      "Acc_pct": 70.9090909090909,
+      "correct": 39,
+      "n": 55
+    },
+    "Temporal Reasoning": {
+      "Acc_pct": 23.163841807909606,
+      "correct": 41,
+      "n": 177
+    }
+  },
+  "config": {
+    "model_name": "Gemma-4-12B-it",
+    "sampling": "hornet",
+    "num_frames": 24,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "/tmp/claude-102924/-projects-adsum-mllm-om-MotionBlind/3ffe5275-e749-4dc8-a7d8-e83e1511e8a8/scratchpad/stage/vmme/gemma4it_vmme_*.json",
+    "dataset": "videomme"
+  },
+  "_derived": true
+}

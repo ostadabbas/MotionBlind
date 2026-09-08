@@ -1,0 +1,115 @@
+{
+  "Acc": 0.5462962962962963,
+  "Acc_pct": 54.629629629629626,
+  "Acc_ci95": [
+    52.74646616455397,
+    56.49963760128792
+  ],
+  "n": 2700,
+  "correct": 1475,
+  "invalid": 0,
+  "chance_pct": 25.0,
+  "majority_baseline_pct": 27.22222222222222,
+  "majority_letter": "B",
+  "gt_distribution": {
+    "A": 677,
+    "B": 735,
+    "C": 684,
+    "D": 604
+  },
+  "choice_distribution": {
+    "A": 763,
+    "B": 630,
+    "C": 762,
+    "D": 545
+  },
+  "by_duration": {
+    "long": {
+      "Acc_pct": 46.44444444444444,
+      "correct": 418,
+      "n": 900
+    },
+    "medium": {
+      "Acc_pct": 52.0,
+      "correct": 468,
+      "n": 900
+    },
+    "short": {
+      "Acc_pct": 65.44444444444444,
+      "correct": 589,
+      "n": 900
+    }
+  },
+  "by_task_type": {
+    "Action Reasoning": {
+      "Acc_pct": 50.175438596491226,
+      "correct": 143,
+      "n": 285
+    },
+    "Action Recognition": {
+      "Acc_pct": 53.674121405750796,
+      "correct": 168,
+      "n": 313
+    },
+    "Attribute Perception": {
+      "Acc_pct": 71.62162162162163,
+      "correct": 159,
+      "n": 222
+    },
+    "Counting Problem": {
+      "Acc_pct": 33.208955223880594,
+      "correct": 89,
+      "n": 268
+    },
+    "Information Synopsis": {
+      "Acc_pct": 71.82662538699691,
+      "correct": 232,
+      "n": 323
+    },
+    "OCR Problems": {
+      "Acc_pct": 54.67625899280576,
+      "correct": 76,
+      "n": 139
+    },
+    "Object Reasoning": {
+      "Acc_pct": 51.76211453744494,
+      "correct": 235,
+      "n": 454
+    },
+    "Object Recognition": {
+      "Acc_pct": 59.32203389830509,
+      "correct": 210,
+      "n": 354
+    },
+    "Spatial Perception": {
+      "Acc_pct": 62.96296296296296,
+      "correct": 34,
+      "n": 54
+    },
+    "Spatial Reasoning": {
+      "Acc_pct": 76.78571428571429,
+      "correct": 43,
+      "n": 56
+    },
+    "Temporal Perception": {
+      "Acc_pct": 49.09090909090909,
+      "correct": 27,
+      "n": 55
+    },
+    "Temporal Reasoning": {
+      "Acc_pct": 33.333333333333336,
+      "correct": 59,
+      "n": 177
+    }
+  },
+  "config": {
+    "model_name": "Qwen3-VL-4B",
+    "sampling": "uniform",
+    "num_frames": 16,
+    "ablation": "reversed_frames",
+    "prompt_template": "default",
+    "source": "results/qwen3_vl_4b_videomme_*.json",
+    "dataset": "videomme"
+  },
+  "_derived": true
+}

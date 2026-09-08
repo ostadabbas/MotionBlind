@@ -1,0 +1,124 @@
+{
+  "Acc": 0.5659259259259259,
+  "Acc_pct": 56.592592592592595,
+  "Acc_ci95": [
+    54.71498605557542,
+    58.45146570698346
+  ],
+  "n": 2700,
+  "correct": 1528,
+  "invalid": 2,
+  "chance_pct": 25.0,
+  "majority_baseline_pct": 27.22222222222222,
+  "majority_letter": "B",
+  "gt_distribution": {
+    "A": 677,
+    "B": 735,
+    "C": 684,
+    "D": 604
+  },
+  "choice_distribution": {
+    "A": 397,
+    "B": 923,
+    "C": 756,
+    "D": 622
+  },
+  "by_duration": {
+    "long": {
+      "Acc_pct": 48.888888888888886,
+      "correct": 440,
+      "n": 900
+    },
+    "medium": {
+      "Acc_pct": 52.55555555555556,
+      "correct": 473,
+      "n": 900
+    },
+    "short": {
+      "Acc_pct": 68.33333333333333,
+      "correct": 615,
+      "n": 900
+    }
+  },
+  "by_task_type": {
+    "Action Reasoning": {
+      "Acc_pct": 50.526315789473685,
+      "correct": 144,
+      "n": 285
+    },
+    "Action Recognition": {
+      "Acc_pct": 53.99361022364217,
+      "correct": 169,
+      "n": 313
+    },
+    "Attribute Perception": {
+      "Acc_pct": 67.11711711711712,
+      "correct": 149,
+      "n": 222
+    },
+    "Counting Problem": {
+      "Acc_pct": 39.55223880597015,
+      "correct": 106,
+      "n": 268
+    },
+    "Information Synopsis": {
+      "Acc_pct": 76.47058823529412,
+      "correct": 247,
+      "n": 323
+    },
+    "OCR Problems": {
+      "Acc_pct": 56.115107913669064,
+      "correct": 78,
+      "n": 139
+    },
+    "Object Reasoning": {
+      "Acc_pct": 55.50660792951542,
+      "correct": 252,
+      "n": 454
+    },
+    "Object Recognition": {
+      "Acc_pct": 57.909604519774014,
+      "correct": 205,
+      "n": 354
+    },
+    "Spatial Perception": {
+      "Acc_pct": 61.111111111111114,
+      "correct": 33,
+      "n": 54
+    },
+    "Spatial Reasoning": {
+      "Acc_pct": 73.21428571428571,
+      "correct": 41,
+      "n": 56
+    },
+    "Temporal Perception": {
+      "Acc_pct": 56.36363636363637,
+      "correct": 31,
+      "n": 55
+    },
+    "Temporal Reasoning": {
+      "Acc_pct": 41.24293785310734,
+      "correct": 73,
+      "n": 177
+    }
+  },
+  "config": {
+    "model_name": "bishoygaloaa/motion-o",
+    "benchmark": "videomme",
+    "sampling": "random",
+    "num_frames": 24,
+    "seed": 0,
+    "prompt_template": "default",
+    "fps": 8.0,
+    "shuffle": false,
+    "reverse": false,
+    "hornet_load": null,
+    "hornet_ckpt": null,
+    "hornet_repo": null,
+    "f2c_clip": null,
+    "f2c_pool": null,
+    "f2c_s_max": null,
+    "f2c_lambda_r": null,
+    "f2c_lambda_l": null
+  }
+}

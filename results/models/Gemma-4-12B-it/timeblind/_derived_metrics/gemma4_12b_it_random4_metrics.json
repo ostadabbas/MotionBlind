@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.18166666666666667,
+  "V_Acc": 0.2975,
+  "Acc": 0.5520833333333334,
+  "I_Acc": 0.06666666666666667,
+  "F1_yesno_pct": 34.39,
+  "yesno_Acc_pct": 53.51,
+  "yes_rate_pct": 20.78,
+  "confusion": {
+    "TP": 146,
+    "FP": 103,
+    "FN": 454,
+    "TN": 495,
+    "invalid": 2,
+    "n_yesno": 1200
+  },
+  "config": {
+    "model_name": "Gemma-4-12B-it",
+    "sampling": "random",
+    "num_frames": 4,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "/tmp/claude-102924/-projects-adsum-mllm-om-MotionBlind/3ffe5275-e749-4dc8-a7d8-e83e1511e8a8/scratchpad/stage/tb/gemma4it_tb_*.json",
+    "dataset": "timeblind"
+  },
+  "_derived": true
+}

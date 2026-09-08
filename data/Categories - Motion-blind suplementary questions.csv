@@ -1,0 +1,20 @@
+Instance ID,Question 1,Question 2
+02_05_b,Is the first push weaker than the second one?,Is the first push stronger than the second one?
+09_00_b,Is the first push weaker than the second one?,Is the first push stronger than the second one?
+09_01_b,Is the first push weaker than the second one?,Is the first push stronger than the second one?
+09_02_b,Is the first push weaker than the second one?,Is the first push stronger than the second one?
+09_03_b,Is the first push weaker than the second one?,Is the first push stronger than the second one?
+09_04_b,Is the first push weaker than the second one?,Is the first push stronger than the second one?
+09_04_c,Does the ball travel faster in the second push compared to the first?,Does the ball travel faster in the first push compared to the second?
+09_05_b,Is the ball that starts closer to the camera pushed harder?,Is the ball that starts further from the camera pushed harder?
+09_06_b,Is the disk at the camera's right pushed harder?,Is the disk at the camera's left pushed harder?
+09_11_b,Is the first push weaker than the second one?,Is the first push stronger than the second one?
+09_11_c,Is the magnitude of the ball's velocity smaller the first time compared to the second time?,Is the magnitude of the ball's velocity larger the first time compared to the second time?
+09_12_b,Is the first push weaker than the second one?,Is the first push stronger than the second one?
+09_14_b,Does the pendulum strike the cup with less force the first time compared to the second time?,Does the pendulum strike the cup with more force the first time compared to the second time?
+14_04_b,Does the pen move away from the person?,Does the pen move towards the person?
+14_05_b,Does the pen move away from the edge of the table?,Does the pen move towards the edge of the table?
+14_10_b,Does the table top go away from the floor?,Does the table top go towards the floor?
+14_13_b,Is the cup moving closer to the sink?,Is the cup getting away from the sink?
+15_00_b,"From the camera's point of view, does the man move his head to the camera's left?","From the camera's point of view, does the man move his head to the camera's right?"
+15_04_b,Does the notebook fall to the camera's right?,Does the notebook fall to the camera's left?

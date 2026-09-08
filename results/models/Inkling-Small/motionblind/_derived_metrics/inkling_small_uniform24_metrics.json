@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.23333333333333334,
+  "V_Acc": 0.30833333333333335,
+  "Acc": 0.5541666666666667,
+  "I_Acc": 0.05,
+  "F1_yesno_pct": 59.62,
+  "yesno_Acc_pct": 55.42,
+  "yes_rate_pct": 60.42,
+  "confusion": {
+    "TP": 79,
+    "FP": 66,
+    "FN": 41,
+    "TN": 54,
+    "invalid": 0,
+    "n_yesno": 240
+  },
+  "config": {
+    "model_name": "Inkling-Small",
+    "sampling": "uniform",
+    "num_frames": 24,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "results/inkling_small_mbhuman_*.json",
+    "dataset": "mbhuman"
+  },
+  "_derived": true
+}

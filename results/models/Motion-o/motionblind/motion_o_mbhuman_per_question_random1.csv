@@ -1,0 +1,400 @@
+strategy,nframes,ablation,index,instance_id,video_path,question,gold,model_output,extracted,correct,frame_indices,f2c_scales,error,pred_file
+random,1,none,0,0,videos/02_00_0.mp4,Does the person stir faster the first time compared to the second time?,yes,No.,no,0,300,,,motion_o_mb_default_random1.json
+random,1,none,1,0,videos/02_00_1.mp4,Does the person stir faster the first time compared to the second time?,no,No.,no,1,152,,,motion_o_mb_default_random1.json
+random,1,none,2,0,videos/02_00_0.mp4,Does the person stir slower the first time compared to the second time?,no,No.,no,1,300,,,motion_o_mb_default_random1.json
+random,1,none,3,0,videos/02_00_1.mp4,Does the person stir slower the first time compared to the second time?,yes,No.,no,0,152,,,motion_o_mb_default_random1.json
+random,1,none,4,1,videos/02_01_0.mp4,Does the drawer close faster the first time compared to the second time?,yes,No.,no,0,76,,,motion_o_mb_default_random1.json
+random,1,none,5,1,videos/02_01_1.mp4,Does the drawer close faster the first time compared to the second time?,no,No.,no,1,58,,,motion_o_mb_default_random1.json
+random,1,none,6,1,videos/02_01_0.mp4,Does the drawer close slower the first time compared to the second time?,no,No.,no,1,76,,,motion_o_mb_default_random1.json
+random,1,none,7,1,videos/02_01_1.mp4,Does the drawer close slower the first time compared to the second time?,yes,No.,no,0,58,,,motion_o_mb_default_random1.json
+random,1,none,8,2,videos/02_02_0.mp4,Does the person open their hand faster the first time compared to the second time?,yes,No.,no,0,87,,,motion_o_mb_default_random1.json
+random,1,none,9,2,videos/02_02_1.mp4,Does the person open their hand faster the first time compared to the second time?,no,No.,no,1,8,,,motion_o_mb_default_random1.json
+random,1,none,10,2,videos/02_02_0.mp4,Does the person open their hand slower the first time compared to the second time?,no,No.,no,1,87,,,motion_o_mb_default_random1.json
+random,1,none,11,2,videos/02_02_1.mp4,Does the person open their hand slower the first time compared to the second time?,yes,No.,no,0,8,,,motion_o_mb_default_random1.json
+random,1,none,12,3,videos/02_03_0.mp4,Does the person press the pillow faster the first time compared to the second time?,yes,No.,no,0,28,,,motion_o_mb_default_random1.json
+random,1,none,13,3,videos/02_03_1.mp4,Does the person press the pillow faster the first time compared to the second time?,no,No.,no,1,133,,,motion_o_mb_default_random1.json
+random,1,none,14,3,videos/02_03_0.mp4,Does the person press the pillow slower the first time compared to the second time?,no,No.,no,1,28,,,motion_o_mb_default_random1.json
+random,1,none,15,3,videos/02_03_1.mp4,Does the person press the pillow slower the first time compared to the second time?,yes,No.,no,0,133,,,motion_o_mb_default_random1.json
+random,1,none,16,4,videos/02_04_0.mp4,"Once off the ramp, does the ball move faster the first time compared to the second time?",yes,"No.
+
+The image shows two separate instances of a red ball rolling down ramps on blue carpeted surfaces. The question asks whether the ball moves faster in one instance versus another without providing specific details about speed differences between these individual events within each frame shown here. Since we cannot determine relative speeds from this still image alone and there is no indication that it's comparing different times or conditions for comparison purposes beyond what can be visually observed at once (i.e., both balls appear to have similar trajectories), I must answer based solely upon visual evidence provided:
+
+- Both balls seem to follow comparable paths.
+- There doesn't appear any significant difference suggesting they moved differently regarding velocity after leaving their respective ramps as captured by our view point.
+
+Therefore: **No**, because under given constraints only one snapshot per event allows us not enough information to conclude otherwise than similarity noted above.",no,0,10,,,motion_o_mb_default_random1.json
+random,1,none,17,4,videos/02_04_1.mp4,"Once off the ramp, does the ball move faster the first time compared to the second time?",no,"No.
+
+The image shows two separate instances of a ball rolling down ramps and then moving on flat surfaces after being released from different heights (or with varying initial conditions). The speed at which each ball moves once it leaves the ramp is influenced by its release height and other factors like friction but not necessarily in comparison between these specific images unless additional information about their respective starting points was provided for direct comparison. Without such details, we cannot definitively say whether one instance results in greater velocity than another based solely upon this visual evidence alone within just those frames shown here. Therefore, without further context regarding how they were launched initially relative to each other's positions before reaching any common point where speeds could be measured directly side-by-side - as seen only indirectly through their paths post-ramp exit – no conclusive determination can be made concerning comparative velocities achieved during flight across identical ground levels following departure from said inclines. Thus, given what’s presented visually herein: **NO**, there isn't enough data available to assert that either event resulted unequivocally higher final translational kinetic energy transfered into motion immediately subsequent to leaving the inclined planes depicted above them respectively.",no,1,50,,,motion_o_mb_default_random1.json
+random,1,none,18,4,videos/02_04_0.mp4,"Once off the ramp, does the ball move slower the first time compared to the second time?",no,"No.
+
+The image shows two separate instances of a red ball rolling down and then moving away from a blue ramp on a carpeted floor. The movement appears consistent in both cases; there is no indication that it moves slower after being released once before. Therefore, based solely on this single frame without additional context about multiple trials, we cannot conclude whether one instance was noticeably different than another regarding speed post-ramp release. However, if asked directly comparing these specific frames provided here: 
+
+- **First Time:** Ball rolls smoothly downwards.
+- **Second Time (implied):** Same smooth roll as seen initially.
+
+Thus, within just observing what's shown visually between those moments captured - they appear identical concerning motion dynamics immediately following their respective releases. Hence:
+
+*No.*",no,1,10,,,motion_o_mb_default_random1.json
+random,1,none,19,4,videos/02_04_1.mp4,"Once off the ramp, does the ball move slower the first time compared to the second time?",yes,"No.
+
+The image shows two separate instances of a red ball rolling down and then moving away from a blue ramp on what appears to be an outdoor surface with a patterned carpet-like texture. The question asks whether the ball moves slower in one instance than another based solely on this single frame without additional context about subsequent movements after each event is completed (i.e., when it has rolled completely out). Since we cannot observe any further motion beyond these initial frames for comparison purposes here, there isn't enough information provided within just observing ""once"" versus potentially multiple occurrences where speed could vary between them if they were observed over different intervals post-rolling off ramps. Therefore, no definitive answer can be given regarding relative speeds across distinct events depicted only by their starting point as shown above.",no,0,50,,,motion_o_mb_default_random1.json
+random,1,none,20,5,videos/02_05_0.mp4,Does the ball travel faster in the second push compared to the first?,yes,"No.
+
+The image shows two separate instances of pushing an object across a surface, but it does not provide enough information about speed comparisons between them without additional context such as time intervals and distance measurements for each instance. Therefore, based solely on this single frame with no comparative data provided, we cannot determine if one push is faster than another. The answer would be ""No"" only under specific conditions that aren't met here due to lack of sufficient evidence from just observing motion within a still photo.",no,0,83,,,motion_o_mb_default_random1.json
+random,1,none,21,5,videos/02_05_1.mp4,Does the ball travel faster in the second push compared to the first?,no,"No.
+
+The image shows two separate instances of what appears to be a ball being pushed across a surface, but it does not provide enough information about speed comparisons between them without additional context such as time intervals and distance measurements for each instance. Therefore, based solely on this single frame with no comparative data provided, we cannot determine if one push is faster than another. The answer would need more specific details from multiple frames showing both pushes side by side for comparison purposes. 
+
+However, since you asked me to respond yes/no given only visual evidence here (which isn't sufficient), I must say: **No**, because there's insufficient proof that any difference exists visually alone; further analysis needed!",no,1,178,,,motion_o_mb_default_random1.json
+random,1,none,22,5,videos/02_05_0.mp4,Does the ball travel faster in the first push compared to the second?,no,"No.
+
+The image shows two separate instances of what appears to be a ball being pushed across a surface, likely on different occasions due to the distinct shadows and lighting conditions that suggest they were taken at different times. The speed cannot be directly compared between these images as there is no indication of them occurring simultaneously within one continuous sequence where we could observe consistent environmental factors affecting their motion over time. Therefore, based solely on this still image comparison without additional context about when each event occurred relative to another, it's not possible to definitively determine if the ball traveled faster during its initial push versus subsequent pushes shown here. Hence, ""No"" would imply an assumption beyond visual evidence provided by just observing static frames from video footage which isn't feasible given only single snapshots available for analysis.",no,1,83,,,motion_o_mb_default_random1.json
+random,1,none,23,5,videos/02_05_1.mp4,Does the ball travel faster in the first push compared to the second?,yes,"No.
+
+The image shows two separate instances of what appears to be a ball being pushed across a surface, but it does not provide enough information about speed comparisons between them without additional context such as time intervals and distance measurements for each instance. Therefore, based solely on this single frame with no comparative data provided, we cannot determine if one push is faster than another. The answer would need more specific details from multiple frames showing both pushes side by side for comparison purposes. 
+
+However, since you asked me to respond yes/no given only visual content here (which doesn't allow direct measurement), I must clarify that there isn’t sufficient evidence within just these images alone to make any definitive statement regarding relative speeds; hence my inability to confidently say ""Yes"" or ""No"". If further analysis were possible using video footage where both events could be observed simultaneously over an equal period, then perhaps some conclusions might have been drawn otherwise. But under current conditions presented merely through still photos, no conclusive determination can be made concerning which event was quicker.",no,0,178,,,motion_o_mb_default_random1.json
+random,1,none,24,6,videos/02_05_0.mp4,Is the first push weaker than the second one?,yes,"No.
+
+The image shows two red objects on what appears to be a whiteboard, with shadows indicating light coming from windows behind it. The position of these objects suggests that they have been pushed across the surface by an unseen force (likely someone's hand). 
+
+To determine if the pushes were different in strength:
+1. **First Push**: A single object is seen moving.
+2. **Second Push**: Another similar object moves independently and seems slightly further along its path compared to the initial movement after being released into motion again.
+
+Given this observation where both objects move but show varying distances traveled before stopping, we can infer differences between their motions due possibly to differing forces applied initially for each push. Therefore, based purely off visual evidence provided here without knowing exact conditions like friction levels etc., there might indeed exist some difference implying ""the first push"" could potentially be less powerful relative just judging visually alone within context shown - hence no definitive answer unless more data points considered. However strictly speaking considering only visible outcomes presented yes would suffice as per question asked directly comparing them side-by-side.",no,0,83,,,motion_o_mb_default_random1.json
+random,1,none,25,6,videos/02_05_1.mp4,Is the first push weaker than the second one?,no,"No.
+
+The image shows two red balls on what appears to be a white surface, likely a table with shadows cast by window blinds in the background. The position of these balls suggests that they have been pushed across the surface at different times and distances from each other. 
+
+To determine if the first push was weaker than the second based solely on this static snapshot is not possible without additional context such as video footage showing the motion dynamics over time. However:
+
+1. If we assume both pushes were applied under similar conditions (e.g., same force but varying distance due to friction), then comparing their final positions would give an indication.
+2. In visual terms:
+   - The ball closer seems farther away after its initial contact point compared to where it started moving.
+   
+Given just this still frame alone does not provide enough information about speed or acceleration during movement; therefore no definitive conclusion can be drawn regarding which push might've been ""weaker"" between them directly through this single photo analysis methodically. Therefore, I cannot confidently answer 'Yes' or 'No'. Additional data like video recording could help clarify further details needed for accurate assessment here.",no,1,178,,,motion_o_mb_default_random1.json
+random,1,none,26,6,videos/02_05_0.mp4,Is the first push stronger than the second one?,no,"No.
+
+The image shows two red objects on what appears to be a whiteboard, with shadows cast by vertical blinds in front of them. The position and size of these objects do not change between frames, indicating that no pushes have occurred since they were placed there initially. Therefore, it is impossible for either object's movement (or lack thereof) to indicate which ""push"" was stronger if any at all. Since neither has moved from its initial placement, we cannot determine relative strength based solely on this visual information provided within an individual frame sequence without additional context about time intervals between observations. Thus, I must answer 'No' as per your instruction but note that such analysis requires more data points over multiple instances rather than just single-frame comparisons here shown.",no,1,83,,,motion_o_mb_default_random1.json
+random,1,none,27,6,videos/02_05_1.mp4,Is the first push stronger than the second one?,yes,"No.
+
+The image shows two red objects on what appears to be a white surface, possibly a table with shadows cast by window blinds in the background. The position of these objects suggests that they have been pushed across the surface at different times and distances from each other. Without additional context about their initial positions relative to where you would expect them based solely on this single frame (e.g., if there was an object near both locations), it's not possible to definitively determine which ""push"" is stronger just from observing the final resting places alone. 
+
+However, given typical behavior when pushing objects: generally speaking, if we assume no external forces like wind or gravity significantly altered either path after release, then any difference between how far apart those points lie could imply differences in force applied initially; but again without knowing more details such as starting point proximity etc...we cannot conclusively say whether 'first' vs.'second' pushes were stronger. Therefore, I must answer **no**, assuming standard conditions hold true here - i.e.: equal environmental influences & similar handling methods used for both instances shown within photo sequence.",no,0,178,,,motion_o_mb_default_random1.json
+random,1,none,28,7,videos/09_00_0.mp4,Does the box travel farther in the second push compared to the first?,yes,No.,no,0,77,,,motion_o_mb_default_random1.json
+random,1,none,29,7,videos/09_00_1.mp4,Does the box travel farther in the second push compared to the first?,no,No.,no,1,5,,,motion_o_mb_default_random1.json
+random,1,none,30,7,videos/09_00_0.mp4,Does the box travel farther in the first push compared to the second?,no,No.,no,1,77,,,motion_o_mb_default_random1.json
+random,1,none,31,7,videos/09_00_1.mp4,Does the box travel farther in the first push compared to the second?,yes,No.,no,0,5,,,motion_o_mb_default_random1.json
+random,1,none,32,8,videos/09_00_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,77,,,motion_o_mb_default_random1.json
+random,1,none,33,8,videos/09_00_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,5,,,motion_o_mb_default_random1.json
+random,1,none,34,8,videos/09_00_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,77,,,motion_o_mb_default_random1.json
+random,1,none,35,8,videos/09_00_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,5,,,motion_o_mb_default_random1.json
+random,1,none,36,9,videos/09_01_0.mp4,Does the puck travel farther in the second push compared to the first?,yes,"No.
+
+The image shows two separate instances of pushing an object, likely a puck on a table with light reflections creating shadows and lines across it. The distance traveled by the puck appears consistent between both pushes based solely on this still frame without additional context for comparison over time. However, if we were given multiple frames showing progression from start to finish during each push, one could determine whether there was any difference in distance covered per push. Without that information here, I cannot definitively say ""Yes"" as no clear evidence is provided about relative distances within these specific images alone.",no,0,27,,,motion_o_mb_default_random1.json
+random,1,none,37,9,videos/09_01_1.mp4,Does the puck travel farther in the second push compared to the first?,no,"No.
+
+The image shows two separate instances of pushing an object (likely a puck) across a surface, but it does not provide enough information about their respective distances traveled after being pushed by different individuals at slightly different times and angles from each other's perspective within this single frame. Therefore, based on just one snapshot without additional context for comparison between these events over time, we cannot definitively determine if there is any difference in distance covered during either ""push."" Hence, no conclusion can be drawn regarding which 'push' resulted in more significant movement solely through visual analysis here alone.",no,1,9,,,motion_o_mb_default_random1.json
+random,1,none,38,9,videos/09_01_0.mp4,Does the puck travel farther in the first push compared to the second?,no,"No.
+
+The image shows two separate instances of pushing a puck on what appears to be an air hockey table, but it does not provide enough information about the distance traveled by each puck after being pushed for comparison between them. The question assumes that there is sufficient context and data from both pushes which cannot be determined solely based on this single frame without additional frames showing subsequent movements of the pucks post-pushes. Therefore, no definitive answer can be given with just one image provided here. If you have more images or details regarding these events, please share those so we could analyze further if needed.",no,1,27,,,motion_o_mb_default_random1.json
+random,1,none,39,9,videos/09_01_1.mp4,Does the puck travel farther in the first push compared to the second?,yes,"No.
+
+The image shows two different scenarios where an object is pushed across a surface, but it does not provide enough information about the distance traveled by each ""puck"" (the small circular objects) after being pushed once and then again with another person's hand. The question assumes that there were multiple pushes for comparison which isn't evident from this single frame alone without additional context on how many times they have been pushed before taking measurements of their distances. Therefore based solely off what can be seen here - no definitive answer regarding whether one travels further than other under these conditions could be given accurately as we lack necessary data points needed for such analysis within just visual evidence provided herein.",no,0,9,,,motion_o_mb_default_random1.json
+random,1,none,40,10,videos/09_01_0.mp4,Is the first push weaker than the second one?,yes,"No.
+
+The person's hand in the image appears to be positioned closer to the ball on their initial attempt, suggesting they might have used less force compared to when it is further away from them during subsequent attempts. However, without more context and multiple frames showing different distances between the hand and the ball for comparison across pushes, we cannot definitively conclude that this single instance of positioning indicates an inherently weaker push versus another scenario where the distance was greater. Therefore, based solely on visual information provided by just two moments captured at once, no definitive answer can be given about comparative strength unless additional data points show consistent patterns over time. 
+
+Given only these two images as evidence: 
+- The first position seems close.
+- The second (not shown) likely shows some separation due to repeated action.
+
+Thus, if asked directly whether ""the first push"" implies weakness relative to unspecified future actions involving varying distances, then **no**, because there isn't enough information here alone to make such comparisons confidently; other unseen events could alter outcomes significantly beyond what’s visible now.",no,0,27,,,motion_o_mb_default_random1.json
+random,1,none,41,10,videos/09_01_1.mp4,Is the first push weaker than the second one?,no,"No.
+
+The person's hand in the image appears to be making contact with an object on the table, which suggests that they have pushed it. The position of their fingers and palm indicates effort is being applied. There seems to be no indication from this single frame alone whether there was another push before this one; however, if we assume based solely on what can be observed here:
+
+- If two pushes were made (one after each other), then logically speaking:
+  - The initial push would likely require more force as objects often need some momentum to start moving.
+  
+Given these assumptions without additional context about previous actions within frames not shown: 
+
+**Yes**, but only under specific conditions inferred rather than directly observable evidence provided by just this snapshot.",no,1,9,,,motion_o_mb_default_random1.json
+random,1,none,42,10,videos/09_01_0.mp4,Is the first push stronger than the second one?,no,"No.
+
+The image shows two different pushes on what appears to be a table with a small object, possibly a ball bearing in motion between them. The shadows and lighting suggest that there is some difference in force applied by each hand, but without more context it's difficult to definitively say which was stronger just from this still frame alone. However, based solely on visual cues like distance of travel for an object (which isn't visible here) or the apparent effort shown through posture and angle of approach cannot determine if ""the first"" push was necessarily stronger as no comparison can be made visually within single frames showing only one push at once. Therefore, we must rely strictly upon provided options: either yes indicating 'first' being stronger OR no suggesting otherwise - given insufficient information about both pushes simultaneously, I choose NO since any conclusion would require additional data not present herein regarding relative strength between multiple actions happening concurrently across separate moments captured separately).",no,1,27,,,motion_o_mb_default_random1.json
+random,1,none,43,10,videos/09_01_1.mp4,Is the first push stronger than the second one?,yes,"No.
+
+The person's hand in the image appears to be making contact with an object on the table, but there is no visible indication of force being applied that would suggest it is pushing harder compared to another action not shown here (such as if they had pushed earlier). The context provided does not allow for comparison between two distinct pushes without additional information about their respective actions and outcomes. Therefore, based solely on this single frame, we cannot determine whether any particular push was ""stronger"" than others; hence, I must answer 'No' because only one push can be observed at once from such imagery alone.",no,0,9,,,motion_o_mb_default_random1.json
+random,1,none,44,11,videos/09_02_0.mp4,Does the toy car travel farther in the second push compared to the first?,yes,No.,no,0,48,,,motion_o_mb_default_random1.json
+random,1,none,45,11,videos/09_02_1.mp4,Does the toy car travel farther in the second push compared to the first?,no,No.,no,1,83,,,motion_o_mb_default_random1.json
+random,1,none,46,11,videos/09_02_0.mp4,Does the toy car travel farther in the first push compared to the second?,no,No.,no,1,48,,,motion_o_mb_default_random1.json
+random,1,none,47,11,videos/09_02_1.mp4,Does the toy car travel farther in the first push compared to the second?,yes,No.,no,0,83,,,motion_o_mb_default_random1.json
+random,1,none,48,12,videos/09_02_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,48,,,motion_o_mb_default_random1.json
+random,1,none,49,12,videos/09_02_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,83,,,motion_o_mb_default_random1.json
+random,1,none,50,12,videos/09_02_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,48,,,motion_o_mb_default_random1.json
+random,1,none,51,12,videos/09_02_1.mp4,Is the first push stronger than the second one?,yes,"No.
+
+The image shows two different pushes on what appears to be an object with a blue base and wooden top, possibly a toy car or similar device. The hand in each frame is applying force differently:
+
+1. In the left-hand side of the image (first push), there seems to be more direct contact between the hand and the object.
+2. On the right-hand side (second push), less pressure can be observed as it looks like only part of the fingers are touching the object's surface.
+
+Given this observation, we cannot definitively conclude that either push was ""stronger"" without knowing their respective forces applied; however, visually assessing the amount of contact suggests that the initial push might have been exerted slightly harder due to its full finger engagement compared to just partial contact during the subsequent attempt. Therefore, based solely on visual cues provided by these images alone: 
+
+**No**, they do not appear equally strong from purely observational data here presented.",no,0,83,,,motion_o_mb_default_random1.json
+random,1,none,52,13,videos/09_03_0.mp4,Does the ball travel farther in the second push compared to the first?,yes,No.,no,0,29,,,motion_o_mb_default_random1.json
+random,1,none,53,13,videos/09_03_1.mp4,Does the ball travel farther in the second push compared to the first?,no,No.,no,1,27,,,motion_o_mb_default_random1.json
+random,1,none,54,13,videos/09_03_0.mp4,Does the ball travel farther in the first push compared to the second?,no,No.,no,1,29,,,motion_o_mb_default_random1.json
+random,1,none,55,13,videos/09_03_1.mp4,Does the ball travel farther in the first push compared to the second?,yes,No.,no,0,27,,,motion_o_mb_default_random1.json
+random,1,none,56,14,videos/09_03_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,29,,,motion_o_mb_default_random1.json
+random,1,none,57,14,videos/09_03_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,27,,,motion_o_mb_default_random1.json
+random,1,none,58,14,videos/09_03_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,29,,,motion_o_mb_default_random1.json
+random,1,none,59,14,videos/09_03_1.mp4,Is the first push stronger than the second one?,yes,"No.
+
+The image shows two separate instances of pushing an object on a table, but it does not provide enough information to determine which push was stronger without additional context such as speed measurements or force applied at different points in time. The question assumes that we can infer strength from visual cues alone, which is not possible based solely on this single frame and its static nature. Therefore, no definitive answer about relative strengths between pushes 1 and 2 can be given with certainty just by looking at this picture.",no,0,27,,,motion_o_mb_default_random1.json
+random,1,none,60,15,videos/09_04_0.mp4,Does the ball travel farther in the second push compared to the first?,yes,No.,no,0,385,,,motion_o_mb_default_random1.json
+random,1,none,61,15,videos/09_04_1.mp4,Does the ball travel farther in the second push compared to the first?,no,No.,no,1,255,,,motion_o_mb_default_random1.json
+random,1,none,62,15,videos/09_04_0.mp4,Does the ball travel farther in the first push compared to the second?,no,No.,no,1,385,,,motion_o_mb_default_random1.json
+random,1,none,63,15,videos/09_04_1.mp4,Does the ball travel farther in the first push compared to the second?,yes,No.,no,0,255,,,motion_o_mb_default_random1.json
+random,1,none,64,16,videos/09_04_0.mp4,Is the first push weaker than the second one?,yes,No.,no,0,385,,,motion_o_mb_default_random1.json
+random,1,none,65,16,videos/09_04_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,255,,,motion_o_mb_default_random1.json
+random,1,none,66,16,videos/09_04_0.mp4,Is the first push stronger than the second one?,no,No.,no,1,385,,,motion_o_mb_default_random1.json
+random,1,none,67,16,videos/09_04_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,255,,,motion_o_mb_default_random1.json
+random,1,none,68,17,videos/09_04_0.mp4,Does the ball travel faster in the second push compared to the first?,yes,No.,no,0,385,,,motion_o_mb_default_random1.json
+random,1,none,69,17,videos/09_04_1.mp4,Does the ball travel faster in the second push compared to the first?,no,No.,no,1,255,,,motion_o_mb_default_random1.json
+random,1,none,70,17,videos/09_04_0.mp4,Does the ball travel faster in the first push compared to the second?,no,No.,no,1,385,,,motion_o_mb_default_random1.json
+random,1,none,71,17,videos/09_04_1.mp4,Does the ball travel faster in the first push compared to the second?,yes,"No.
+
+The image shows two separate instances of what appears to be a red object being pushed across a white surface, but it does not provide enough information about speed comparisons between them without additional context such as time intervals and distance covered during each ""push."" Therefore, based solely on this single frame comparison:
+
+**No**, we cannot determine if one 'push' is faster than another from just observing these still images alone. Additional data would be needed for an accurate assessment regarding relative speeds.",no,0,255,,,motion_o_mb_default_random1.json
+random,1,none,72,18,videos/09_05_0.mp4,Does the ball that starts closer to the camera roll further?,yes,No.,no,0,19,,,motion_o_mb_default_random1.json
+random,1,none,73,18,videos/09_05_1.mp4,Does the ball that starts closer to the camera roll further?,no,No.,no,1,20,,,motion_o_mb_default_random1.json
+random,1,none,74,18,videos/09_05_0.mp4,Does the ball that starts farther from the camera roll further?,no,"No.
+
+The image shows two balls, one closer to the person and another slightly farther away on the left side of the frame. The ball that is farther from the camera appears smaller in size due to perspective but does not necessarily mean it rolls any further than the other if they were released at similar speeds under identical conditions. However, without additional context about their release point relative to each other's positions within this scene, we cannot definitively conclude which would travel greater distance based solely on visual cues like apparent size difference alone. Therefore, given only what can be observed visually here: **No**, there isn't enough information provided by just looking at these specific frames to determine conclusively whether the more distant ball will roll significantly farther compared with its near counterpart when both start rolling simultaneously after being dropped or pushed off-screen towards us (the viewer).",no,1,19,,,motion_o_mb_default_random1.json
+random,1,none,75,18,videos/09_05_1.mp4,Does the ball that starts farther from the camera roll further?,yes,No.,no,0,20,,,motion_o_mb_default_random1.json
+random,1,none,76,19,videos/09_05_0.mp4,Is the ball that starts closer to the camera pushed harder?,yes,"No.
+
+The person in the image appears to be sitting and holding two balls, one of which is slightly further away from them than the other. There's no indication that they have pushed either ball with any particular force; both appear stationary relative to their position on what looks like an indoor court surface. The question about whether ""the ball that starts closer to the camera"" was pushed harder cannot be answered definitively based solely on this still image without additional context such as motion blur indicating speed or direction changes after release. However, visually comparing distances between where each ball seems positioned suggests neither has been moved significantly by being pushed hard at all—both remain close enough for easy handling while seated. Therefore, it would not make sense to conclude anything definitive regarding comparative pushing forces here just looking at static images alone.",no,0,19,,,motion_o_mb_default_random1.json
+random,1,none,77,19,videos/09_05_1.mp4,Is the ball that starts closer to the camera pushed harder?,no,"No.
+
+The image shows two yellow balls in a pool, with one appearing slightly further from the person's hand than the other. This suggests that if there was any pushing involved (which is not explicitly shown), it would be less forceful for the ball starting farther away rather than being pushed harder by the person who appears ready to push again near their feet. However, without seeing motion blur or additional frames showing action after this moment, we cannot definitively conclude whether more effort was used on either side based solely on static images like these. Therefore, no definitive answer can be given about which ball started ""closer"" and thus potentially received 'harder' pushes; instead of yes/no answers regarding such hypothetical scenarios within still photos alone might lead us astray due to lack of context around timing and dynamics between objects and forces applied during interaction sequences captured here.",no,1,20,,,motion_o_mb_default_random1.json
+random,1,none,78,19,videos/09_05_0.mp4,Is the ball that starts further from the camera pushed harder?,no,"No.
+
+The person in the image appears to be sitting on their knees and is holding two yellow balls, one closer to them than the other. The position of the hands suggests they might have just thrown or rolled both balls away at different distances simultaneously rather than pushing with varying force. There's no clear indication that either ball was pushed harder; it seems more likely due to natural hand positioning when throwing objects like this. Therefore, based solely on visual cues provided by the image without additional context about how hard each ball was actually propelled, we cannot definitively conclude whether any particular ball started farther from the camera because its initial velocity wasn't visibly greater compared to another object being launched under similar conditions (like rolling off someone’s palm). 
+
+However, if asked directly ""is the ball starting further from you pushed harder?"" - given there isn’t enough information showing distinct differences between these actions within an observable timeframe, I would say: **No**, but keep in mind this answer relies heavily upon assumptions not explicitly supported visually here alone!",no,1,19,,,motion_o_mb_default_random1.json
+random,1,none,79,19,videos/09_05_1.mp4,Is the ball that starts further from the camera pushed harder?,yes,"No.
+
+The image shows two yellow balls in a pool, with one closer to the person and another farther away. The position of these balls suggests they were likely thrown into the water at different times or distances by someone off-camera rather than being pushed towards each other directly after starting their journey through the water. Therefore, it is not possible to determine if either was ""pushed"" more forcefully based on this single snapshot alone without additional context about how long ago each ball entered the water relative to when the photo was taken. If we assume both started moving simultaneously due to an initial throw, then no difference can be observed between them regarding force applied during launch since there's only visual evidence for distance covered post-launch which doesn't necessarily correlate linearly with speed/force exertion unless specific timing data exists too. Thus under those assumptions - yes; otherwise: no. However given lack thereof here I'd lean toward saying 'no'.",no,0,20,,,motion_o_mb_default_random1.json
+random,1,none,80,20,videos/09_06_0.mp4,"From the camera's point of view, does the right disk move further?",yes,No.,no,0,135,,,motion_o_mb_default_random1.json
+random,1,none,81,20,videos/09_06_1.mp4,"From the camera's point of view, does the right disk move further?",no,No.,no,1,112,,,motion_o_mb_default_random1.json
+random,1,none,82,20,videos/09_06_0.mp4,"From the camera's point of view, does the left disk move further?",no,No.,no,1,135,,,motion_o_mb_default_random1.json
+random,1,none,83,20,videos/09_06_1.mp4,"From the camera's point of view, does the left disk move further?",yes,No.,no,0,112,,,motion_o_mb_default_random1.json
+random,1,none,84,21,videos/09_06_0.mp4,Is the disk at the camera's right pushed harder?,yes,No.,no,0,135,,,motion_o_mb_default_random1.json
+random,1,none,85,21,videos/09_06_1.mp4,Is the disk at the camera's right pushed harder?,no,No.,no,1,112,,,motion_o_mb_default_random1.json
+random,1,none,86,21,videos/09_06_0.mp4,Is the disk at the camera's left pushed harder?,no,No.,no,1,135,,,motion_o_mb_default_random1.json
+random,1,none,87,21,videos/09_06_1.mp4,Is the disk at the camera's left pushed harder?,yes,No.,no,0,112,,,motion_o_mb_default_random1.json
+random,1,none,88,22,videos/09_07_0.mp4,Is the magnitude of the pendulum arc smaller the first time compared to the second time?,yes,"No.
+
+The image shows two different positions of the pendulum, indicating that it has been released twice with varying magnitudes and directions for its arcs. The first position is at rest on the table, while the subsequent motion demonstrates an arc larger than when initially placed back onto the table after being lifted up by hand (not shown in this frame). Therefore, based solely on what can be observed from one still image without additional context about previous motions, we cannot definitively determine if there was any difference between these two instances regarding their respective amplitudes; however, visually comparing them suggests otherwise due to observable differences in height reached during each swing cycle. Thus, considering only visual evidence provided here would lead us towards concluding ""Yes"", but since no further information exists beyond just observing single frames captured within short intervals - which inherently lacks sufficient temporal resolution needed to accurately assess changes over multiple cycles - such conclusion remains speculative rather than definitive. Henceforth, given our current constraints imposed upon analysis through static images alone, providing either 'yes' or 'no' answer becomes challenging as both options could potentially hold merit depending entirely on how precisely defined terms like “magnitude” might apply under specific conditions not explicitly stated elsewhere outside said snapshot(s) themselves.",no,0,448,,,motion_o_mb_default_random1.json
+random,1,none,89,22,videos/09_07_1.mp4,Is the magnitude of the pendulum arc smaller the first time compared to the second time?,no,"No.
+
+The image shows two different positions of the pendulum, indicating that it has been released twice with varying magnitudes and directions for each swing. The first position is at its highest point (the topmost part), while the second appears lower down in an arc path after being swung back by some force applied earlier. Therefore, based on these observations alone without knowing specific measurements from both swings, we cannot definitively conclude whether one arc was larger than another just visually; however, if asked about relative sizes between them as shown here - yes, there seems to be noticeable difference where initial release resulted into more pronounced arc before gravity pulled it downwards again. So technically speaking 'no', but practically observing this scene suggests otherwise due to visible differences during motion itself rather than static comparison points like height above ground level etc..",no,1,138,,,motion_o_mb_default_random1.json
+random,1,none,90,22,videos/09_07_0.mp4,Is the magnitude of the pendulum arc larger the first time compared to the second time?,no,"No.
+
+The image shows two different positions of the pendulum, but it is not possible from this single frame alone to determine if one swing has a greater amplitude than another without additional context (such as multiple frames showing consecutive swings). However, based on visual inspection and assuming that each position represents an individual swing in sequence:
+
+- The initial position appears more extended.
+- The subsequent position seems less extended relative to its starting point.
+
+Therefore, visually comparing these two distinct moments suggests no consistent pattern indicating whether any particular swing had a larger arc overall within those specific instances shown here. Without further information about other swings' arcs, we cannot definitively conclude yes/no regarding their magnitudes across all observed events depicted thus far. 
+
+For precise analysis requiring comparison between multiple trials under controlled conditions would be necessary for accurate determination.",no,1,448,,,motion_o_mb_default_random1.json
+random,1,none,91,22,videos/09_07_1.mp4,Is the magnitude of the pendulum arc larger the first time compared to the second time?,yes,"No.
+
+The image shows two different positions of the pendulum, but it is not possible from this single frame alone to determine if one swing has a greater amplitude than another without additional context (such as multiple frames showing both swings). However, based on visual inspection and common understanding that each swing should be consistent with its initial release point unless acted upon by external forces like friction or air resistance which aren't evident here, we can infer they might have similar arcs for simplicity in such static images. If you're asking about an actual experiment where data would show differences between trials, then no conclusion could be drawn just from observing these stills.",no,0,138,,,motion_o_mb_default_random1.json
+random,1,none,92,23,videos/09_08_0.mp4,Is the drawer pulled out farther the first time compared to the second time?,yes,No.,no,0,172,,,motion_o_mb_default_random1.json
+random,1,none,93,23,videos/09_08_1.mp4,Is the drawer pulled out farther the first time compared to the second time?,no,No.,no,1,55,,,motion_o_mb_default_random1.json
+random,1,none,94,23,videos/09_08_0.mp4,Is the drawer pulled out less the first time compared to the second time?,no,No.,no,1,172,,,motion_o_mb_default_random1.json
+random,1,none,95,23,videos/09_08_1.mp4,Is the drawer pulled out less the first time compared to the second time?,yes,No.,no,0,55,,,motion_o_mb_default_random1.json
+random,1,none,96,24,videos/09_09_0.mp4,Is the magnitude of the person's arm swing smaller the first time compared to the second time?,yes,No.,no,0,194,,,motion_o_mb_default_random1.json
+random,1,none,97,24,videos/09_09_1.mp4,Is the magnitude of the person's arm swing smaller the first time compared to the second time?,no,No.,no,1,84,,,motion_o_mb_default_random1.json
+random,1,none,98,24,videos/09_09_0.mp4,Is the magnitude of the person's arm swing larger the first time compared to the second time?,no,No.,no,1,194,,,motion_o_mb_default_random1.json
+random,1,none,99,24,videos/09_09_1.mp4,Is the magnitude of the person's arm swing larger the first time compared to the second time?,yes,No.,no,0,84,,,motion_o_mb_default_random1.json
+random,1,none,100,25,videos/09_10_0.mp4,Is the magnitude of the ball's first bounce smaller the first time compared to the second time?,yes,"No.
+
+The image shows two distinct bounces, but it does not provide enough information about their magnitudes in comparison with each other without additional context such as video footage showing multiple bounces and measurements taken from that data. Therefore, based solely on this still image, we cannot determine if one bounce is smaller than another just by visual inspection alone. The question assumes more detail which isn't present here. 
+
+However, since no specific details can be derived directly from an image like this for accurate measurement comparisons between different events (bounces), I must answer ""No"" assuming there’s insufficient evidence provided within the frame itself regarding any comparative analysis needed per your query format request.",no,0,18,,,motion_o_mb_default_random1.json
+random,1,none,101,25,videos/09_10_1.mp4,Is the magnitude of the ball's first bounce smaller the first time compared to the second time?,no,"No
+
+The image does not contain any information about balls bouncing, so it is impossible to determine if there was an initial and subsequent bounce with different magnitudes based on this picture alone. The question cannot be answered using only visual data from the provided image.",no,1,104,,,motion_o_mb_default_random1.json
+random,1,none,102,25,videos/09_10_0.mp4,Is the magnitude of the ball's first bounce larger the first time compared to the second time?,no,"No.
+
+The image shows two bounces, but it does not provide enough information about their magnitudes (heights) for comparison. The question assumes that there is more than one bounce shown in this single frame, which cannot be confirmed from just observing the picture. Therefore, based on the given visual data alone and without additional context or frames showing subsequent bounces, we can only say ""No"" if assuming multiple bounces were intended by asking such a comparative question; however, since no other bounces are visible here, any answer would lack sufficient evidence. If you have access to further images or video footage where these bounces occur consecutively over several frames, then an accurate assessment could follow.",no,1,18,,,motion_o_mb_default_random1.json
+random,1,none,103,25,videos/09_10_1.mp4,Is the magnitude of the ball's first bounce larger the first time compared to the second time?,yes,"No
+
+The image provided does not contain any information about balls bouncing, so it is impossible to determine if there was an initial and subsequent bounce with different magnitudes based on this picture alone. The question cannot be answered using only visual data from the given image.",no,0,104,,,motion_o_mb_default_random1.json
+random,1,none,104,26,videos/09_11_0.mp4,Does the ball travel farther the second time compared to the first time?,yes,No.,no,0,297,,,motion_o_mb_default_random1.json
+random,1,none,105,26,videos/09_11_1.mp4,Does the ball travel farther the second time compared to the first time?,no,No.,no,1,200,,,motion_o_mb_default_random1.json
+random,1,none,106,26,videos/09_11_0.mp4,Does the ball travel farther the first time compared to the second time?,no,No.,no,1,297,,,motion_o_mb_default_random1.json
+random,1,none,107,26,videos/09_11_1.mp4,Does the ball travel farther the first time compared to the second time?,yes,No.,no,0,200,,,motion_o_mb_default_random1.json
+random,1,none,108,27,videos/09_11_0.mp4,Is the first push weaker than the second one?,yes,"No. The image does not provide any information about pushes, so it is impossible to determine if there were two pushes and which was stronger based on this picture alone.",no,0,297,,,motion_o_mb_default_random1.json
+random,1,none,109,27,videos/09_11_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,200,,,motion_o_mb_default_random1.json
+random,1,none,110,27,videos/09_11_0.mp4,Is the first push stronger than the second one?,no,"No.
+
+The image provided does not contain any information about pushes, so it is impossible to determine if there were two pushes and which was stronger based on this picture alone. The question cannot be answered with ""Yes"" or ""No.""",no,1,297,,,motion_o_mb_default_random1.json
+random,1,none,111,27,videos/09_11_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,200,,,motion_o_mb_default_random1.json
+random,1,none,112,28,videos/09_11_0.mp4,Is the magnitude of the ball's velocity smaller the first time compared to the second time?,yes,"No.
+
+The image shows two different moments in time, and there is no visible ball present on either occasion that would allow for comparison of its velocity between these times based solely on this photograph. The question appears to be asking about an event not depicted within the frame provided by the photo. Therefore, it cannot be answered with ""Yes"" or ""No."" If you have additional information outside of what can be seen here regarding any balls' velocities at those specific points in time, please provide that so I could assist further.",no,0,297,,,motion_o_mb_default_random1.json
+random,1,none,113,28,videos/09_11_1.mp4,Is the magnitude of the ball's velocity smaller the first time compared to the second time?,no,"No.
+
+The image shows two different positions and orientations of the ball, indicating that it has been moved between these frames. The initial position suggests an earlier moment in time when the ball was on its way towards being picked up by someone sitting nearby. In contrast, later images show the person interacting with the ball after they have caught it from their previous trajectory. Therefore, we cannot conclude based solely on this single frame whether one instance is before another; rather, each snapshot captures distinct moments within what appears to be continuous motion involving multiple interactions (e.g., throwing, catching). Thus, without additional context about timing relative to other events not shown here, no definitive conclusion can be drawn regarding which event occurred ""first"" concerning only changes observed visually across individual snapshots like those provided above. However, if asked specifically comparing velocities at any given point during these actions - where there isn't enough information available beyond visual cues alone – then yes: generally speaking, objects tend to slow down upon impact due to frictional forces acting against them as they come into contact with surfaces such as floors or hands holding balls etc... Hence under typical circumstances assuming standard conditions prevail throughout scene depicted herein, answer would indeed lean toward 'yes'. But remember always consider broader scope encompassing all relevant factors including environmental influences too!",no,1,200,,,motion_o_mb_default_random1.json
+random,1,none,114,28,videos/09_11_0.mp4,Is the magnitude of the ball's velocity larger the first time compared to the second time?,no,"No.
+
+The image shows two separate instances where an object appears on the floor, but there is no indication that it was thrown twice with different velocities in this single photograph sequence. The question seems based on assumptions not supported by visual evidence from just one photo showing both events occurring sequentially within what looks like a short timeframe for such actions (e.g., rolling). Without additional context about timing and motion between these moments captured here, we cannot determine if their speeds differ significantly enough to be discernible visually alone without further information. Therefore, I must answer ""No"" as per your instruction while acknowledging limitations inherent when analyzing isolated images regarding physical dynamics beyond static observation capabilities provided solely through still photography at any given moment point-in-time snapshot.",no,1,297,,,motion_o_mb_default_random1.json
+random,1,none,115,28,videos/09_11_1.mp4,Is the magnitude of the ball's velocity larger the first time compared to the second time?,yes,"No.
+
+The image shows two different moments in time, and it is not possible from this single frame alone to determine if there was any change in the speed (magnitude) of the ball between these times without additional context such as video footage showing its motion over both instances. The question assumes that we can infer something about the ball’s velocity based on just one snapshot which isn't sufficient for making comparisons like those asked here. Therefore, I cannot confidently answer ""Yes"" or ""No"". If you have more images or information regarding how long each instance lasted before being captured by your camera, then perhaps an analysis could be made but with only what appears now - no comparison at all!",no,0,200,,,motion_o_mb_default_random1.json
+random,1,none,116,29,videos/09_12_0.mp4,Does the ball travel farther the second time compared to the first time?,yes,No.,no,0,347,,,motion_o_mb_default_random1.json
+random,1,none,117,29,videos/09_12_1.mp4,Does the ball travel farther the second time compared to the first time?,no,No.,no,1,350,,,motion_o_mb_default_random1.json
+random,1,none,118,29,videos/09_12_0.mp4,Does the ball travel farther the first time compared to the second time?,no,No.,no,1,347,,,motion_o_mb_default_random1.json
+random,1,none,119,29,videos/09_12_1.mp4,Does the ball travel farther the first time compared to the second time?,yes,No.,no,0,350,,,motion_o_mb_default_random1.json
+random,1,none,120,30,videos/09_12_0.mp4,Is the first push weaker than the second one?,yes,"No.
+
+The image shows two different areas of an office space, but there is no indication that any pushing action has occurred in either area based on this still photograph alone. Therefore, it's not possible to determine if ""the first"" and ""second"" refer to specific actions within these images without additional context about what those actions might be. The question cannot be answered with just observing static photos like this one. If you have more information regarding events leading up to taking such pictures, please provide details so I can assist better!",no,0,347,,,motion_o_mb_default_random1.json
+random,1,none,121,30,videos/09_12_1.mp4,Is the first push weaker than the second one?,no,No.,no,1,350,,,motion_o_mb_default_random1.json
+random,1,none,122,30,videos/09_12_0.mp4,Is the first push stronger than the second one?,no,"No.
+
+The image provided does not contain any information about pushing objects, so it is impossible to determine if there was an interaction between two pushes and which one might have been stronger based on this picture alone. The question cannot be answered with ""Yes"" or ""No.""",no,1,347,,,motion_o_mb_default_random1.json
+random,1,none,123,30,videos/09_12_1.mp4,Is the first push stronger than the second one?,yes,No.,no,0,350,,,motion_o_mb_default_random1.json
+random,1,none,124,31,videos/09_13_0.mp4,Does the person squeeze with more force the first time compared to the second time?,yes,No.,no,0,319,,,motion_o_mb_default_random1.json
+random,1,none,125,31,videos/09_13_1.mp4,Does the person squeeze with more force the first time compared to the second time?,no,No.,no,1,230,,,motion_o_mb_default_random1.json
+random,1,none,126,31,videos/09_13_0.mp4,Does the person squeeze with less force the first time compared to the second time?,no,No.,no,1,319,,,motion_o_mb_default_random1.json
+random,1,none,127,31,videos/09_13_1.mp4,Does the person squeeze with less force the first time compared to the second time?,yes,No.,no,0,230,,,motion_o_mb_default_random1.json
+random,1,none,128,32,videos/09_14_0.mp4,Does the cup travel farther the second time compared to the first time?,yes,No.,no,0,100,,,motion_o_mb_default_random1.json
+random,1,none,129,32,videos/09_14_1.mp4,Does the cup travel farther the second time compared to the first time?,no,No.,no,1,21,,,motion_o_mb_default_random1.json
+random,1,none,130,32,videos/09_14_0.mp4,Does the cup travel farther the first time compared to the second time?,no,"No.
+
+The video shows two attempts where the ball is rolled towards the cup, and in both cases, it appears that the ball travels approximately the same distance before hitting the cup. There's no clear indication of one attempt being significantly longer than the other based on this single frame alone. However, if we were to compare multiple frames from each trial over several seconds, there might be subtle differences observable by eye movement or changes in position relative to objects around them like the table edge or person’s hand placement for guidance during release. But with just these still images provided here without additional context or comparison between trials across different moments within those respective sequences - I cannot definitively say yes/no regarding whether ""the cup"" traveled further initially versus later due only visual information presented herewithin.",no,1,100,,,motion_o_mb_default_random1.json
+random,1,none,131,32,videos/09_14_1.mp4,Does the cup travel farther the first time compared to the second time?,yes,"No.
+
+The video shows two trials where a ball is rolled towards an inclined plane with a cup at its end. In both instances, after rolling down and hitting the incline, the ball collides with the cup causing it to move forward on the table surface. The distance traveled by the cup appears consistent in each trial; there's no noticeable difference between how far the cup moves during these two attempts based solely on this visual evidence provided within one frame of the video clip. Therefore, we cannot conclude that the cup travels any further than usual just from observing what happens here alone without additional context about other factors like air resistance etc., which aren't visible either! So yes - if asked specifically whether ""the cup travels farther"" as per your question directly related only to visuals shown here – then indeed NO, because they seem equal under current observation conditions given limited information available through single snapshot captured moment.",no,0,21,,,motion_o_mb_default_random1.json
+random,1,none,132,33,videos/09_14_0.mp4,Does the pendulum strike the cup with less force the first time compared to the second time?,yes,"No.
+
+The video shows two instances of a pendulum striking a cup, and in both cases, it appears that there is no significant difference in the impact force between the first and second strikes based on visual observation alone. However, without quantitative data such as measurements from an accelerometer attached to either the pendulum's bob or the table surface where impacts occur, we cannot definitively conclude whether one strike has more or less force than another just by looking at this single frame sequence. Therefore, while visually similar, stating ""Yes"" would be speculative given only these frames for analysis. If you have access to additional footage showing multiple trials under controlled conditions (e.g., consistent initial release height), then further conclusions could potentially be drawn about relative forces applied during different strikes within those specific trials.",no,0,100,,,motion_o_mb_default_random1.json
+random,1,none,133,33,videos/09_14_1.mp4,Does the pendulum strike the cup with less force the first time compared to the second time?,no,No.,no,1,21,,,motion_o_mb_default_random1.json
+random,1,none,134,33,videos/09_14_0.mp4,Does the pendulum strike the cup with more force the first time compared to the second time?,no,"No.
+
+The video shows two attempts at striking the cup, and it appears that in both cases, there is no significant difference in the impact on the cup's position relative to its initial state after being struck by the pendulum. The cup moves slightly but not enough to indicate any notable change between the two strikes based solely on this observation of movement alone without additional context such as sound or visual confirmation of damage. Therefore, we cannot definitively conclude whether one strike had ""more"" (in terms of noticeable effect) than another from just observing their positions post-strike; however, if asked about an observable difference like displacement or angle deflection - which isn't clearly distinguishable here due to lack of detail - then indeed they appear similar suggesting equal force for practical purposes within these constraints provided only through static image analysis. Thus, considering what can be reasonably inferred visually: **No**, assuming 'force' refers strictly to observed motion changes rather than internal structural impacts or other factors outside frame view.",no,1,100,,,motion_o_mb_default_random1.json
+random,1,none,135,33,videos/09_14_1.mp4,Does the pendulum strike the cup with more force the first time compared to the second time?,yes,No.,no,0,21,,,motion_o_mb_default_random1.json
+random,1,none,136,34,videos/14_00_0.mp4,"From the camera's point of view, is the man walking to the right?",yes,No.,no,0,39,,,motion_o_mb_default_random1.json
+random,1,none,137,34,videos/14_00_1.mp4,"From the camera's point of view, is the man walking to the right?",no,No.,no,1,6,,,motion_o_mb_default_random1.json
+random,1,none,138,34,videos/14_00_0.mp4,"From the camera's point of view, is the man walking to the left?",no,No.,no,1,39,,,motion_o_mb_default_random1.json
+random,1,none,139,34,videos/14_00_1.mp4,"From the camera's point of view, is the man walking to the left?",yes,No.,no,0,6,,,motion_o_mb_default_random1.json
+random,1,none,140,35,videos/14_01_0.mp4,Is the cup moving towards the sink?,yes,No.,no,0,18,,,motion_o_mb_default_random1.json
+random,1,none,141,35,videos/14_01_1.mp4,Is the cup moving towards the sink?,no,No.,no,1,96,,,motion_o_mb_default_random1.json
+random,1,none,142,35,videos/14_01_0.mp4,Is the cup moving away from the sink?,no,No.,no,1,18,,,motion_o_mb_default_random1.json
+random,1,none,143,35,videos/14_01_1.mp4,Is the cup moving away from the sink?,yes,No.,no,0,96,,,motion_o_mb_default_random1.json
+random,1,none,144,36,videos/14_02_0.mp4,Is the man getting closer to the camera?,yes,Yes.,yes,1,29,,,motion_o_mb_default_random1.json
+random,1,none,145,36,videos/14_02_1.mp4,Is the man getting closer to the camera?,no,No.,no,1,95,,,motion_o_mb_default_random1.json
+random,1,none,146,36,videos/14_02_0.mp4,Is the man moving farther from the camera?,no,No.,no,1,29,,,motion_o_mb_default_random1.json
+random,1,none,147,36,videos/14_02_1.mp4,Is the man moving farther from the camera?,yes,No.,no,0,95,,,motion_o_mb_default_random1.json
+random,1,none,148,37,videos/14_03_0.mp4,"From the camera's point of view, is the man moving to the right?",yes,No.,no,0,51,,,motion_o_mb_default_random1.json
+random,1,none,149,37,videos/14_03_1.mp4,"From the camera's point of view, is the man moving to the right?",no,No.,no,1,17,,,motion_o_mb_default_random1.json
+random,1,none,150,37,videos/14_03_0.mp4,"From the camera's point of view, is the man moving to the left?",no,No.,no,1,51,,,motion_o_mb_default_random1.json
+random,1,none,151,37,videos/14_03_1.mp4,"From the camera's point of view, is the man moving to the left?",yes,No.,no,0,17,,,motion_o_mb_default_random1.json
+random,1,none,152,38,videos/14_04_0.mp4,"From the camera's point of view, does the pen roll to the right?",yes,No.,no,0,10,,,motion_o_mb_default_random1.json
+random,1,none,153,38,videos/14_04_1.mp4,"From the camera's point of view, does the pen roll to the right?",no,No.,no,1,54,,,motion_o_mb_default_random1.json
+random,1,none,154,38,videos/14_04_0.mp4,"From the camera's point of view, does the pen roll to the left?",no,No.,no,1,10,,,motion_o_mb_default_random1.json
+random,1,none,155,38,videos/14_04_1.mp4,"From the camera's point of view, does the pen roll to the left?",yes,No.,no,0,54,,,motion_o_mb_default_random1.json
+random,1,none,156,39,videos/14_04_0.mp4,Does the pen move away from the person?,yes,No.,no,0,10,,,motion_o_mb_default_random1.json
+random,1,none,157,39,videos/14_04_1.mp4,Does the pen move away from the person?,no,No.,no,1,54,,,motion_o_mb_default_random1.json
+random,1,none,158,39,videos/14_04_0.mp4,Does the pen move towards the person?,no,No.,no,1,10,,,motion_o_mb_default_random1.json
+random,1,none,159,39,videos/14_04_1.mp4,Does the pen move towards the person?,yes,No.,no,0,54,,,motion_o_mb_default_random1.json
+random,1,none,160,40,videos/14_05_0.mp4,"From the camera's point of view, does the pen slide to the right?",yes,No.,no,0,20,,,motion_o_mb_default_random1.json
+random,1,none,161,40,videos/14_05_1.mp4,"From the camera's point of view, does the pen slide to the right?",no,No.,no,1,29,,,motion_o_mb_default_random1.json
+random,1,none,162,40,videos/14_05_0.mp4,"From the camera's point of view, does the pen slide to the left?",no,No.,no,1,20,,,motion_o_mb_default_random1.json
+random,1,none,163,40,videos/14_05_1.mp4,"From the camera's point of view, does the pen slide to the left?",yes,No.,no,0,29,,,motion_o_mb_default_random1.json
+random,1,none,164,41,videos/14_05_0.mp4,Does the pen move away from the edge of the table?,yes,No.,no,0,20,,,motion_o_mb_default_random1.json
+random,1,none,165,41,videos/14_05_1.mp4,Does the pen move away from the edge of the table?,no,No.,no,1,29,,,motion_o_mb_default_random1.json
+random,1,none,166,41,videos/14_05_0.mp4,Does the pen move towards the edge of the table?,no,No.,no,1,20,,,motion_o_mb_default_random1.json
+random,1,none,167,41,videos/14_05_1.mp4,Does the pen move towards the edge of the table?,yes,No.,no,0,29,,,motion_o_mb_default_random1.json
+random,1,none,168,42,videos/14_06_0.mp4,Does the bottle move up?,yes,Yes.,yes,1,125,,,motion_o_mb_default_random1.json
+random,1,none,169,42,videos/14_06_1.mp4,Does the bottle move up?,no,Yes.,yes,0,28,,,motion_o_mb_default_random1.json
+random,1,none,170,42,videos/14_06_0.mp4,Does the bottle move down?,no,No.,no,1,125,,,motion_o_mb_default_random1.json
+random,1,none,171,42,videos/14_06_1.mp4,Does the bottle move down?,yes,Yes.,yes,1,28,,,motion_o_mb_default_random1.json
+random,1,none,172,43,videos/14_07_0.mp4,Does the phone move closer to the camera?,yes,No.,no,0,121,,,motion_o_mb_default_random1.json
+random,1,none,173,43,videos/14_07_1.mp4,Does the phone move closer to the camera?,no,No.,no,1,144,,,motion_o_mb_default_random1.json
+random,1,none,174,43,videos/14_07_0.mp4,Does the phone move away from the camera?,no,No.,no,1,121,,,motion_o_mb_default_random1.json
+random,1,none,175,43,videos/14_07_1.mp4,Does the phone move away from the camera?,yes,No.,no,0,144,,,motion_o_mb_default_random1.json
+random,1,none,176,44,videos/14_08_0.mp4,Does the book move closer to the camera?,yes,No.,no,0,80,,,motion_o_mb_default_random1.json
+random,1,none,177,44,videos/14_08_1.mp4,Does the book move closer to the camera?,no,No.,no,1,29,,,motion_o_mb_default_random1.json
+random,1,none,178,44,videos/14_08_0.mp4,Does the book move away from the camera?,no,No.,no,1,80,,,motion_o_mb_default_random1.json
+random,1,none,179,44,videos/14_08_1.mp4,Does the book move away from the camera?,yes,No.,no,0,29,,,motion_o_mb_default_random1.json
+random,1,none,180,45,videos/14_09_0.mp4,Does the cup move away from the camera?,yes,No.,no,0,74,,,motion_o_mb_default_random1.json
+random,1,none,181,45,videos/14_09_1.mp4,Does the cup move away from the camera?,no,No.,no,1,42,,,motion_o_mb_default_random1.json
+random,1,none,182,45,videos/14_09_0.mp4,Does the cup move closer to the camera?,no,No.,no,1,74,,,motion_o_mb_default_random1.json
+random,1,none,183,45,videos/14_09_1.mp4,Does the cup move closer to the camera?,yes,No.,no,0,42,,,motion_o_mb_default_random1.json
+random,1,none,184,46,videos/14_10_0.mp4,Is the table top moving up?,yes,No.,no,0,168,,,motion_o_mb_default_random1.json
+random,1,none,185,46,videos/14_10_1.mp4,Is the table top moving up?,no,No.,no,1,211,,,motion_o_mb_default_random1.json
+random,1,none,186,46,videos/14_10_0.mp4,Is the table top moving down?,no,No.,no,1,168,,,motion_o_mb_default_random1.json
+random,1,none,187,46,videos/14_10_1.mp4,Is the table top moving down?,yes,No.,no,0,211,,,motion_o_mb_default_random1.json
+random,1,none,188,47,videos/14_10_0.mp4,Does the table top go away from the floor?,yes,No.,no,0,168,,,motion_o_mb_default_random1.json
+random,1,none,189,47,videos/14_10_1.mp4,Does the table top go away from the floor?,no,No.,no,1,211,,,motion_o_mb_default_random1.json
+random,1,none,190,47,videos/14_10_0.mp4,Does the table top go towards the floor?,no,No.,no,1,168,,,motion_o_mb_default_random1.json
+random,1,none,191,47,videos/14_10_1.mp4,Does the table top go towards the floor?,yes,No.,no,0,211,,,motion_o_mb_default_random1.json
+random,1,none,192,48,videos/14_11_0.mp4,Does the toy car move away from the camera?,yes,No.,no,0,87,,,motion_o_mb_default_random1.json
+random,1,none,193,48,videos/14_11_1.mp4,Does the toy car move away from the camera?,no,No.,no,1,54,,,motion_o_mb_default_random1.json
+random,1,none,194,48,videos/14_11_0.mp4,Does the toy car move closer to the camera?,no,No.,no,1,87,,,motion_o_mb_default_random1.json
+random,1,none,195,48,videos/14_11_1.mp4,Does the toy car move closer to the camera?,yes,No.,no,0,54,,,motion_o_mb_default_random1.json
+random,1,none,196,49,videos/14_12_0.mp4,"From the camera's point of view, does the ball roll to the camera's right?",yes,No.,no,0,29,,,motion_o_mb_default_random1.json
+random,1,none,197,49,videos/14_12_1.mp4,"From the camera's point of view, does the ball roll to the camera's right?",no,No,no,1,42,,,motion_o_mb_default_random1.json
+random,1,none,198,49,videos/14_12_0.mp4,"From the camera's point of view, does the ball roll to the camera's left?",no,No.,no,1,29,,,motion_o_mb_default_random1.json
+random,1,none,199,49,videos/14_12_1.mp4,"From the camera's point of view, does the ball roll to the camera's left?",yes,No,no,0,42,,,motion_o_mb_default_random1.json
+random,1,none,200,50,videos/14_13_0.mp4,Is the cup moving away from the camera?,yes,No.,no,0,28,,,motion_o_mb_default_random1.json
+random,1,none,201,50,videos/14_13_1.mp4,Is the cup moving away from the camera?,no,No.,no,1,30,,,motion_o_mb_default_random1.json
+random,1,none,202,50,videos/14_13_0.mp4,Is the cup getting closer to the camera?,no,No.,no,1,28,,,motion_o_mb_default_random1.json
+random,1,none,203,50,videos/14_13_1.mp4,Is the cup getting closer to the camera?,yes,No.,no,0,30,,,motion_o_mb_default_random1.json
+random,1,none,204,51,videos/14_13_0.mp4,Is the cup moving closer to the sink?,yes,Yes.,yes,1,28,,,motion_o_mb_default_random1.json
+random,1,none,205,51,videos/14_13_1.mp4,Is the cup moving closer to the sink?,no,No.,no,1,30,,,motion_o_mb_default_random1.json
+random,1,none,206,51,videos/14_13_0.mp4,Is the cup getting away from the sink?,no,No.,no,1,28,,,motion_o_mb_default_random1.json
+random,1,none,207,51,videos/14_13_1.mp4,Is the cup getting away from the sink?,yes,No.,no,0,30,,,motion_o_mb_default_random1.json
+random,1,none,208,52,videos/15_00_0.mp4,Is the man bending counter-clock wise?,yes,No.,no,0,10,,,motion_o_mb_default_random1.json
+random,1,none,209,52,videos/15_00_1.mp4,Is the man bending counter-clock wise?,no,No.,no,1,27,,,motion_o_mb_default_random1.json
+random,1,none,210,52,videos/15_00_0.mp4,Is the man bending clock wise?,no,No.,no,1,10,,,motion_o_mb_default_random1.json
+random,1,none,211,52,videos/15_00_1.mp4,Is the man bending clock wise?,yes,No.,no,0,27,,,motion_o_mb_default_random1.json
+random,1,none,212,53,videos/15_00_0.mp4,"From the camera's point of view, does the man move his head to the camera's left?",yes,No.,no,0,10,,,motion_o_mb_default_random1.json
+random,1,none,213,53,videos/15_00_1.mp4,"From the camera's point of view, does the man move his head to the camera's left?",no,No.,no,1,27,,,motion_o_mb_default_random1.json
+random,1,none,214,53,videos/15_00_0.mp4,"From the camera's point of view, does the man move his head to the camera's right?",no,No.,no,1,10,,,motion_o_mb_default_random1.json
+random,1,none,215,53,videos/15_00_1.mp4,"From the camera's point of view, does the man move his head to the camera's right?",yes,No.,no,0,27,,,motion_o_mb_default_random1.json
+random,1,none,216,54,videos/15_01_0.mp4,Is the bottle spun clockwise?,yes,No.,no,0,23,,,motion_o_mb_default_random1.json
+random,1,none,217,54,videos/15_01_1.mp4,Is the bottle spun clockwise?,no,No.,no,1,36,,,motion_o_mb_default_random1.json
+random,1,none,218,54,videos/15_01_0.mp4,Is the bottle spun counter-clockwise?,no,No.,no,1,23,,,motion_o_mb_default_random1.json
+random,1,none,219,54,videos/15_01_1.mp4,Is the bottle spun counter-clockwise?,yes,No.,no,0,36,,,motion_o_mb_default_random1.json
+random,1,none,220,55,videos/15_02_0.mp4,Is the airpods case spun clockwise?,yes,No.,no,0,3,,,motion_o_mb_default_random1.json
+random,1,none,221,55,videos/15_02_1.mp4,Is the airpods case spun clockwise?,no,No.,no,1,10,,,motion_o_mb_default_random1.json
+random,1,none,222,55,videos/15_02_0.mp4,Is the airpods case spun counter-clockwise?,no,No.,no,1,3,,,motion_o_mb_default_random1.json
+random,1,none,223,55,videos/15_02_1.mp4,Is the airpods case spun counter-clockwise?,yes,No.,no,0,10,,,motion_o_mb_default_random1.json
+random,1,none,224,56,videos/15_03_0.mp4,Is the man spinning clockwise?,yes,No.,no,0,76,,,motion_o_mb_default_random1.json
+random,1,none,225,56,videos/15_03_1.mp4,Is the man spinning clockwise?,no,No.,no,1,28,,,motion_o_mb_default_random1.json
+random,1,none,226,56,videos/15_03_0.mp4,Is the man spinning counter-clockwise?,no,No.,no,1,76,,,motion_o_mb_default_random1.json
+random,1,none,227,56,videos/15_03_1.mp4,Is the man spinning counter-clockwise?,yes,No.,no,0,28,,,motion_o_mb_default_random1.json
+random,1,none,228,57,videos/15_04_0.mp4,Does the notebook rotate clockwise?,yes,No.,no,0,61,,,motion_o_mb_default_random1.json
+random,1,none,229,57,videos/15_04_1.mp4,Does the notebook rotate clockwise?,no,No.,no,1,22,,,motion_o_mb_default_random1.json
+random,1,none,230,57,videos/15_04_0.mp4,Does the notebook rotate counter-clockwise?,no,No.,no,1,61,,,motion_o_mb_default_random1.json
+random,1,none,231,57,videos/15_04_1.mp4,Does the notebook rotate counter-clockwise?,yes,No,no,0,22,,,motion_o_mb_default_random1.json
+random,1,none,232,58,videos/15_04_0.mp4,Does the notebook fall to the camera's right?,yes,No.,no,0,61,,,motion_o_mb_default_random1.json
+random,1,none,233,58,videos/15_04_1.mp4,Does the notebook fall to the camera's right?,no,No.,no,1,22,,,motion_o_mb_default_random1.json
+random,1,none,234,58,videos/15_04_0.mp4,Does the notebook fall to the camera's left?,no,No,no,1,61,,,motion_o_mb_default_random1.json
+random,1,none,235,58,videos/15_04_1.mp4,Does the notebook fall to the camera's left?,yes,No,no,0,22,,,motion_o_mb_default_random1.json
+random,1,none,236,59,videos/15_05_0.mp4,Is the cup spun clockwise?,yes,No.,no,0,58,,,motion_o_mb_default_random1.json
+random,1,none,237,59,videos/15_05_1.mp4,Is the cup spun clockwise?,no,No.,no,1,28,,,motion_o_mb_default_random1.json
+random,1,none,238,59,videos/15_05_0.mp4,Is the cup spun counter-clockwise?,no,No.,no,1,58,,,motion_o_mb_default_random1.json
+random,1,none,239,59,videos/15_05_1.mp4,Is the cup spun counter-clockwise?,yes,No.,no,0,28,,,motion_o_mb_default_random1.json

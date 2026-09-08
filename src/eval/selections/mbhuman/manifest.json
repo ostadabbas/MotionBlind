@@ -1,0 +1,177 @@
+{
+ "dataset": "/scratch/bhatia.dh/timeblind/mbhuman/data.jsonl",
+ "n_items": 240,
+ "max_side": 768,
+ "cells": {
+  "hornet1": {
+   "sampler": "hornet",
+   "num_frames": 1,
+   "seed": 0,
+   "max_side": 768,
+   "query_conditioned": false,
+   "encoder": null,
+   "hornet_load": "full",
+   "hornet_pool": 32,
+   "hornet_ckpt": "/scratch/bhatia.dh/timeblind/HORNet_ckpt/checkpoints/short/checkpoint-0.550.pt",
+   "hornet_ckpt_variant": "short",
+   "hornet_loader": "lmms_eval_utils.hornet.VisionGRPOPolicy",
+   "n_items": 240,
+   "frames_sent": {
+    "mean": 1.0,
+    "min": 1,
+    "max": 1
+   },
+   "tokens": {
+    "low": {
+     "total": 55408,
+     "mean": 230.9,
+     "usd": 0.0111
+    },
+    "high": {
+     "total": 111168,
+     "mean": 463.2,
+     "usd": 0.0222
+    }
+   },
+   "elapsed_s": 26.5,
+   "keep_prob_std_mean": 4.303e-05,
+   "keep_prob_std_max": 0.00109436
+  },
+  "hornet4": {
+   "sampler": "hornet",
+   "num_frames": 4,
+   "seed": 0,
+   "max_side": 768,
+   "query_conditioned": false,
+   "encoder": null,
+   "hornet_load": "full",
+   "hornet_pool": 32,
+   "hornet_ckpt": "/scratch/bhatia.dh/timeblind/HORNet_ckpt/checkpoints/short/checkpoint-0.550.pt",
+   "hornet_ckpt_variant": "short",
+   "hornet_loader": "lmms_eval_utils.hornet.VisionGRPOPolicy",
+   "n_items": 240,
+   "frames_sent": {
+    "mean": 4.0,
+    "min": 4,
+    "max": 4
+   },
+   "tokens": {
+    "low": {
+     "total": 192832,
+     "mean": 803.5,
+     "usd": 0.0386
+    },
+    "high": {
+     "total": 415872,
+     "mean": 1732.8,
+     "usd": 0.0832
+    }
+   },
+   "elapsed_s": 19.0,
+   "keep_prob_std_mean": 4.303e-05,
+   "keep_prob_std_max": 0.00109436
+  },
+  "hornet8": {
+   "sampler": "hornet",
+   "num_frames": 8,
+   "seed": 0,
+   "max_side": 768,
+   "query_conditioned": false,
+   "encoder": null,
+   "hornet_load": "full",
+   "hornet_pool": 32,
+   "hornet_ckpt": "/scratch/bhatia.dh/timeblind/HORNet_ckpt/checkpoints/short/checkpoint-0.550.pt",
+   "hornet_ckpt_variant": "short",
+   "hornet_loader": "lmms_eval_utils.hornet.VisionGRPOPolicy",
+   "n_items": 240,
+   "frames_sent": {
+    "mean": 8.0,
+    "min": 8,
+    "max": 8
+   },
+   "tokens": {
+    "low": {
+     "total": 376064,
+     "mean": 1566.9,
+     "usd": 0.0752
+    },
+    "high": {
+     "total": 822144,
+     "mean": 3425.6,
+     "usd": 0.1644
+    }
+   },
+   "elapsed_s": 18.7,
+   "keep_prob_std_mean": 4.303e-05,
+   "keep_prob_std_max": 0.00109436
+  },
+  "hornet16": {
+   "sampler": "hornet",
+   "num_frames": 16,
+   "seed": 0,
+   "max_side": 768,
+   "query_conditioned": false,
+   "encoder": null,
+   "hornet_load": "full",
+   "hornet_pool": 32,
+   "hornet_ckpt": "/scratch/bhatia.dh/timeblind/HORNet_ckpt/checkpoints/short/checkpoint-0.550.pt",
+   "hornet_ckpt_variant": "short",
+   "hornet_loader": "lmms_eval_utils.hornet.VisionGRPOPolicy",
+   "n_items": 240,
+   "frames_sent": {
+    "mean": 16.0,
+    "min": 16,
+    "max": 16
+   },
+   "tokens": {
+    "low": {
+     "total": 742528,
+     "mean": 3093.9,
+     "usd": 0.1485
+    },
+    "high": {
+     "total": 1634688,
+     "mean": 6811.2,
+     "usd": 0.3269
+    }
+   },
+   "elapsed_s": 18.7,
+   "keep_prob_std_mean": 4.303e-05,
+   "keep_prob_std_max": 0.00109436
+  },
+  "hornet24": {
+   "sampler": "hornet",
+   "num_frames": 24,
+   "seed": 0,
+   "max_side": 768,
+   "query_conditioned": false,
+   "encoder": null,
+   "hornet_load": "full",
+   "hornet_pool": 32,
+   "hornet_ckpt": "/scratch/bhatia.dh/timeblind/HORNet_ckpt/checkpoints/short/checkpoint-0.550.pt",
+   "hornet_ckpt_variant": "short",
+   "hornet_loader": "lmms_eval_utils.hornet.VisionGRPOPolicy",
+   "n_items": 240,
+   "frames_sent": {
+    "mean": 24.0,
+    "min": 24,
+    "max": 24
+   },
+   "tokens": {
+    "low": {
+     "total": 1108992,
+     "mean": 4620.8,
+     "usd": 0.2218
+    },
+    "high": {
+     "total": 2447232,
+     "mean": 10196.8,
+     "usd": 0.4894
+    }
+   },
+   "elapsed_s": 18.5,
+   "keep_prob_std_mean": 4.303e-05,
+   "keep_prob_std_max": 0.00109436
+  }
+ }
+}

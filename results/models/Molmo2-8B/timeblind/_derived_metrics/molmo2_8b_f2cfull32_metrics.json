@@ -1,0 +1,27 @@
+{
+  "Q_Acc": 0.19083333333333333,
+  "V_Acc": 0.3575,
+  "Acc": 0.5729166666666666,
+  "I_Acc": 0.08,
+  "F1_yesno_pct": 58.34,
+  "yesno_Acc_pct": 55.25,
+  "yes_rate_pct": 57.42,
+  "confusion": {
+    "TP": 376,
+    "FP": 313,
+    "FN": 224,
+    "TN": 287,
+    "invalid": 0,
+    "n_yesno": 1200
+  },
+  "config": {
+    "model_name": "Molmo2-8B",
+    "sampling": "f2cfull",
+    "num_frames": 32,
+    "ablation": "none",
+    "prompt_template": "default",
+    "source": "/tmp/molmo2_tb_stage/molmo2_8b_timeblind_default_*.json",
+    "dataset": "timeblind"
+  },
+  "_derived": true
+}

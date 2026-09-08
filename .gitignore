@@ -1,0 +1,126 @@
+# Dataset + model weights: live on the cluster, never commit
+# Anchored at repo root so results/models/<model>/timeblind/ is not ignored
+# (macOS git is case-insensitive, so a bare TimeBlind/ also matched that folder).
+/TimeBlind/
+hf_cache/
+dataset/
+# NOT a bare `data/`: the dataset now lives at the repo root as data/, and an
+# unanchored rule also swallowed src/analysis/site/data/. Only the stale
+# pre-restructure copy is ignored.
+/results/data/
+/src/analysis/data/
+
+# Third-party HORNet clone (has its own .git; reproduce via `git clone`, don't vendor it)
+HORNet/
+
+# Slides deck (Slidev + node_modules + exports): too big for the repo
+slides/
+node_modules/
+
+# Local archives (e.g. frame dumps)
+*.tgz
+# Was a workaround for the *.mp4 rule below; the raw videos are tracked now.
+data/videos.zip
+
+# Raw SLURM log staging pulled from the cluster.
+/results/logs/
+
+# Saved frame dumps (--save-frames) can be large
+**/frames/
+# ...but the site's thumbnails live under a dir named frames/ too, and the page
+# 404s without them. Git will not descend into an excluded dir, so the negation
+# has to re-include the DIRECTORY, not just the files inside it.
+!motionblind.io/figures/frames/
+
+# Smoke-test / voided outputs — not real runs
+results/_smoke_*.json
+results/*.void
+
+# Per-job immutable copies of launch scripts (bash reads a script incrementally, so a job
+# must not execute a file that is being edited).
+.runner.*.sh
+
+# Junk
+.DS_Store
+__pycache__/
+*.pyc
+.history/
+
+# Secrets
+.env
+.env.local
+*.pem
+
+# Local research working docs: keep out of the shared repo
+CLAUDE.md
+history.md
+ISSUES.md
+node_modules/
+*.mp4
+# ...except the human-eval stimuli: index.html streams these from videos/<name>.mp4
+# at runtime (see data.jsonl video_path), so they have to be tracked to serve.
+!data/videos/*.mp4
+slides-export.pdf
+
+# --- Slide deck / presentation build (personal, not part of the research repo) ---
+*.pptx
+assets/
+build_deck.py
+make_slide_figures.py
+make_hornet_diagnostic.py
+render_preview.py
+media/figures/slide_*.png
+
+# --- Standard junk (not needed in the repo) ---
+# Python
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ML checkpoints / weights: live on the cluster / HF, never commit
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Logs: raw SLURM logs land at repo root (root-anchored so deeper paths are not caught)
+/*.out
+/*.err
+*.log
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+# Finder duplicates: copying a file in place yields "<name> 2.<ext>".
+* 2.*
+
+# LaTeX build artifacts. *.log is covered above, but `/*.out` only ignores the
+# repo root, so the rest need naming.
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+
+# pulled cluster logs may contain API keys from sbatch preambles
+results/logs/cluster/
+*.env
+.secrets_env
+
+# SLURM logs from selection-freeze jobs: .out/.err can carry echoed API keys,
+# so keep them out of the tree.
+results/selections/**/*.out
+results/selections/**/*.err
+
+# Project page lives in a separate repo
+docs/
