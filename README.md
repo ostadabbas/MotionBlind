@@ -2,7 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-TBD-b31b1b.svg)](https://arxiv.org/)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-on%20HuggingFace-blue)](https://huggingface.co/datasets/augmentedcognitionlab/MotionBlind)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Non--Commercial-lightgrey.svg)](LICENSE)
 [![Project Page](https://img.shields.io/badge/%F0%9F%8C%90%20Project%20Page-website-blue)](https://ostadabbas.github.io/motionblind.github.io/)
 
 Code and data for the paper *MotionBlind: Probing the Illusion of Motion Understanding in
